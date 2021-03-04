@@ -181,7 +181,7 @@ img{
     .reviews__title{
         text-align: center;
         margin-top: 64px;
-        margin-bottom: 32px;
+        margin-bottom: 32px;       
     }
     .review__item{
         display: flex;
@@ -191,6 +191,19 @@ img{
         background-color: $light-gray;
         gap: 40px;
         padding: 42px;
+        position: relative;
+        z-index: -2;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: -61px;
+            background-color: white;
+            width: 83px;
+            height: 83px;
+            border-radius: 50%;
+            z-index: -1;
+        }
         .review__title{
             font-family: Play;
             font-style: normal;
@@ -216,6 +229,7 @@ img{
                 color: $black;
             }
         }
+        
     }
     
 }

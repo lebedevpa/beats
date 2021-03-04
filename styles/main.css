@@ -171,6 +171,19 @@ img {
   background-color: #F8FAF9;
   gap: 40px;
   padding: 42px;
+  position: relative;
+  z-index: -2;
+}
+.reviews .review__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -61px;
+  background-color: white;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  z-index: -1;
 }
 .reviews .review__item .review__title {
   font-family: Play;
