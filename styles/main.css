@@ -39,7 +39,7 @@ img {
 }
 
 .section-greeting {
-  background: url("img/content/Solo--white.png") no-repeat left 700px top 135px;
+  background: url("/img/content/Solo--white.png") no-repeat left 700px top 135px;
 }
 .section-greeting .top-line {
   margin-bottom: 50px;
@@ -80,7 +80,7 @@ img {
 .section-greeting .telephone .telephone__link:before {
   content: "";
   display: inline-flex;
-  background: url("img/icons/phone.png") no-repeat;
+  background: url("/img/icons/phone.png") no-repeat;
   background-size: contain;
   width: 14px;
   height: 14px;
