@@ -54,7 +54,7 @@ img {
 .section-greeting .telephone {
   display: inline-flex;
   justify-content: center;
-  text-align: top;
+  align-items: center;
 }
 .section-greeting .telephone .telephone__link {
   font-weight: normal;
@@ -62,14 +62,18 @@ img {
   line-height: 18px;
 }
 .section-greeting .telephone .telephone__link:before {
-  content: url("/img/icons/phone.png");
-  width: 100%;
+  content: "";
+  display: inline-flex;
+  background: url("/img/icons/phone.png") no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
   margin-right: 6px;
 }
-.section-greeting .features {
+.section-greeting .features-small {
   margin-bottom: 50px;
 }
-.section-greeting .features .features__menu {
+.section-greeting .features-small .features__menu {
   display: inline-flex;
   gap: 40px;
 }
@@ -82,7 +86,7 @@ img {
   width: 50%;
   margin-bottom: 70px;
 }
-.half-section .section__title {
+.half-section .half-section__title {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -90,7 +94,7 @@ img {
   color: #292929;
   text-transform: uppercase;
 }
-.half-section .section__text {
+.half-section .half-section__text {
   font-family: Alegreya Sans;
   font-style: normal;
   font-weight: normal;

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
+
+
+
+
+
 $gray: #666666;
 $red: #E01F3D;
 $black: #292929;
@@ -53,10 +58,9 @@ img{
         padding: 24px 0;
     }
     .telephone{
-
             display: inline-flex;
             justify-content: center;
-            text-align: top;
+            align-items: center;
 
         .telephone__link{
             font-weight: normal;
@@ -64,14 +68,18 @@ img{
             line-height: 18px;
 
             &:before{
-                content: url('/img/icons/phone.png');
-                width: 100%;
+                content: "";
+                display: inline-flex;
+                background: url('/img/icons/phone.png') no-repeat;
+                background-size: contain;
+                width: 14px;
+                height: 14px;
                 margin-right: 6px;
             }
         }
         
     }
-    .features{
+    .features-small{
         margin-bottom: 50px;
         .features__menu{
             display: inline-flex;
@@ -90,7 +98,7 @@ img{
     margin-bottom: 70px;
 
 
-    .section__title{
+    .half-section__title{
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
@@ -99,7 +107,7 @@ img{
         text-transform: uppercase;
     }
 
-    .section__text{
+    .half-section__text{
         font-family: Alegreya Sans; 
         font-style: normal;
         font-weight: normal;
