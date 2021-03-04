@@ -51,6 +51,10 @@ img {
   align-items: center;
   padding: 24px 0;
 }
+.section-greeting .header .logo {
+  width: 40px;
+  height: 40px;
+}
 .section-greeting .nav-menu__list {
   display: flex;
   flex-direction: row;

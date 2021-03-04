@@ -48,6 +48,7 @@ img{
 .section-greeting{
     .top-line{
         margin-bottom: 50px;
+
     }
     background: url('/img/content/Solo--white.png') no-repeat left 700px top 135px ;
    .header{
@@ -56,6 +57,10 @@ img{
         justify-content: space-between;
         align-items: center;
         padding: 24px 0;
+        .logo{
+            width: 40px;
+            height: 40px;
+        }
     }
     .nav-menu__list{
         display: flex;
