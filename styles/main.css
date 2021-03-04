@@ -1,41 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-
-.greeting{
-    background-color: #F5F5F5;
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
+body {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
+ul {
+  list-style: none;
 }
 
-.nav-menu__list{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap:27px;
-
+a {
+  text-decoration: none;
+  color: #292929;
 }
 
-
-
-.nav-menu__link{
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #292929;
+img {
+  width: 100%;
 }
 
-.container{
-    width: 1100px;
-    margin: 0 auto;
+.container {
+  width: 1100px;
+  margin: 0 auto;
 }
-body{
-    font-family: 'Play', sans-serif;
-    color: #000;    
+
+.btn {
+  padding: 21px 41px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.btn--red {
+  background-color: #E01F3D;
+  color: #fff;
+}
+
+.section-greeting {
+  background: url("/img/content/Solo--white.png") no-repeat left 700px top 135px;
+}
+.section-greeting .top-line {
+  margin-bottom: 50px;
+}
+.section-greeting .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.section-greeting .telephone {
+  display: inline-flex;
+  justify-content: center;
+  text-align: top;
+}
+.section-greeting .telephone .telephone__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+.section-greeting .telephone .telephone__link:before {
+  content: url("/img/icons/phone.png");
+  width: 100%;
+  margin-right: 6px;
+}
+.section-greeting .features {
+  margin-bottom: 50px;
+}
+.section-greeting .features .features__menu {
+  display: inline-flex;
+  gap: 40px;
+}
+
+.section--gray {
+  background-color: #F5F5F5;
+}
+
+.half-section {
+  width: 50%;
+  margin-bottom: 70px;
+}
+.half-section .section__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 108%;
+  color: #292929;
+  text-transform: uppercase;
+}
+.half-section .section__text {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 56px;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 27px;
+}
+.nav-menu__list .nav-menu__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #292929;
 }

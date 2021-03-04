@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
+$gray: #666666;
+$red: #E01F3D;
+$black: #292929;
+$white: #fff;
+
+body{
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;  
+    color: $gray;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+img{
+    width: 100%;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+.btn{
+    padding: 21px 41px;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+.btn--red{
+    background-color: $red;
+    color: $white;
+}
+
+.section-greeting{
+    .top-line{
+        margin-bottom: 50px;
+    }
+    background: url('/img/content/Solo--white.png') no-repeat left 700px top 135px ;
+   .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+    }
+    .telephone{
+
+            display: inline-flex;
+            justify-content: center;
+            text-align: top;
+
+        .telephone__link{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 18px;
+
+            &:before{
+                content: url('/img/icons/phone.png');
+                width: 100%;
+                margin-right: 6px;
+            }
+        }
+        
+    }
+    .features{
+        margin-bottom: 50px;
+        .features__menu{
+            display: inline-flex;
+            gap: 40px;
+        }
+    }
+
+}
+
+.section--gray{
+    background-color: #F5F5F5;
+}
+
+.half-section{
+    width: 50%;
+    margin-bottom: 70px;
+
+
+    .section__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 108%;
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    .section__text{
+        font-family: Alegreya Sans; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 56px;
+    }
+}
+
+
+
+.nav-menu__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:27px;
+
+    .nav-menu__link{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color:$black;
+    }
+}
+
+
