@@ -231,6 +231,32 @@ img{
         }
         
     }
-    
+    .usernames{
+        margin-top: 15px;
+        margin-bottom: 63px;
+        .usernames__menu{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:6px;
+        }
+        .username{
+
+            width: 74px;
+            height: 74px;
+            &:hover{
+                border: 4px solid $red;
+                border-radius: 50%;
+            }
+            .username__avatar{
+                border-radius: 50%;
+            }
+            
+        }
+
+
+    }
 }
 
