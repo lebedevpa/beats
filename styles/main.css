@@ -55,11 +55,14 @@ img {
   width: 40px;
   height: 40px;
 }
+.section-greeting .nav-menu {
+  flex: 1;
+  margin-right: 46px;
+}
 .section-greeting .nav-menu__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 27px;
+  justify-content: space-between;
 }
 .section-greeting .nav-menu__list .nav-menu__link {
   font-weight: normal;

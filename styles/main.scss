@@ -64,12 +64,15 @@ img{
             height: 40px;
         }
     }
+    .nav-menu{
+        flex:1;
+        margin-right: 46px;
+    }
     .nav-menu__list{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        gap:27px;
-    
+        justify-content: space-between;
+        
         .nav-menu__link{
             font-weight: normal;
             font-size: 18px;
