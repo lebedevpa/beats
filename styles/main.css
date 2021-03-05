@@ -209,7 +209,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #292929;
-} 
+}
 .reviews .usernames {
   margin-top: 15px;
   margin-bottom: 63px;
@@ -221,14 +221,13 @@ img {
   align-items: center;
   gap: 6px;
 }
-.reviews .usernames .username {
-  width: 74px;
-  height: 74px;
-}
-.reviews .usernames .username:hover {
-  border: 4px solid #E01F3D;
-  border-radius: 50%;
-}
 .reviews .usernames .username .username__avatar {
   border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+}
+.reviews .usernames .username .username__avatar:hover {
+  border: 4px solid #E01F3D;
+  transition: 0.7s;
 }
