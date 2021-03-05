@@ -52,7 +52,7 @@ img{
         margin-bottom: 50px;
 
     }
-    background: url('/img/content/Solo--white.png') no-repeat left 700px top 135px ;
+    background: url('../img/content/Solo--white.png') no-repeat left 700px top 135px ;
    .header{
         display: flex;
         flex-direction: row;
@@ -90,7 +90,7 @@ img{
             &:before{
                 content: "";
                 display: inline-flex;
-                background: url('/img/icons/phone.png') no-repeat;
+                background: url('../img/icons/phone.png') no-repeat;
                 background-size: contain;
                 width: 14px;
                 height: 14px;
@@ -233,7 +233,7 @@ img{
     }
     .usernames{
         margin-top: 15px;
-        margin-bottom: 63px;
+        margin-bottom: 63px;    
         .usernames__menu{
 
             display: flex;
