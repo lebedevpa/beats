@@ -1,0 +1,85 @@
+.section-greeting{
+    .top-line{
+        margin-bottom: 50px;
+
+    }
+    background: url('../img/content/Solo--white.png') no-repeat left 700px top 135px ;
+   .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        .logo{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .nav-menu{
+        flex:1;
+        margin-right: 46px;
+    }
+    .nav-menu__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .nav-menu__link{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+            color:$black;
+        }
+    }    
+    .telephone{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+        .telephone__link{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 18px;
+
+            &:before{
+                content: "";
+                display: inline-flex;
+                background: url('../img/icons/phone.png') no-repeat;
+                background-size: contain;
+                width: 14px;
+                height: 14px;
+                margin-right: 6px;
+            }
+        }
+        
+    }
+    .half-section{
+        width: 50%;
+        margin-bottom: 70px;
+    
+        .half-section__text{
+            font-family: Alegreya Sans; 
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 25px;
+            margin-bottom: 56px;
+        }
+    }
+    .features-small{
+        margin-bottom: 50px;
+        .features-small__menu{
+            display: inline-flex;
+            gap: 40px;
+        }
+    }
+
+}
+
+.section--gray{
+    background-color: #F5F5F5;
+}
+
+.section--light-gray{
+    background-color: $light-gray;
+}
