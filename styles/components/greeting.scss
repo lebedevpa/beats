@@ -1,7 +1,6 @@
 .section-greeting{
     .top-line{
         margin-bottom: 50px;
-
     }
     background: url('../img/content/Solo--white.png') no-repeat left 700px top 135px ;
    .header{
@@ -18,19 +17,19 @@
     .nav-menu{
         flex:1;
         margin-right: 46px;
+        .nav-menu__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .nav-menu__link{
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 30px;
+                color:$black;
+            }
+        }  
     }
-    .nav-menu__list{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-        .nav-menu__link{
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 30px;
-            color:$black;
-        }
-    }    
     .telephone{
             display: inline-flex;
             justify-content: center;
@@ -73,13 +72,4 @@
             gap: 40px;
         }
     }
-
-}
-
-.section--gray{
-    background-color: #F5F5F5;
-}
-
-.section--light-gray{
-    background-color: $light-gray;
 }
