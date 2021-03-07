@@ -1,0 +1,27 @@
+.radio {
+    display: flex;
+}
+
+.radio__element{
+    display: none;
+}
+
+.radio__visible {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+
+    &:before{ 
+        content:"";
+        width: 13px;
+        height: 13px;
+        background-color: $red;
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+}

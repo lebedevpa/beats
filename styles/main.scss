@@ -18,6 +18,8 @@ $light-gray: #F8FAF9;
 @import 'components/reviews';
 @import 'components/section-colors';
 @import 'components/buttons';
+@import 'components/delivery';
+@import 'components/radio';
 
 //components
 
@@ -41,7 +43,7 @@ img{
     width: 100%;
 }
 .container{
-    width: 940px;
+    width: 1100px;
     margin: 0 auto;
 }
 
