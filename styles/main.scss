@@ -4,7 +4,7 @@
 
 $gray: #666666;
 $red: #E01F3D;
-$darkred:#CA1B36;
+$darkred:#CA1B36;   
 $black: #292929;
 $white: #fff;
 $light-gray: #F8FAF9;
@@ -14,6 +14,7 @@ $light-gray: #F8FAF9;
 //components
 
 @import 'components/greeting';
+@import 'components/fixed-menu';
 @import 'components/features';
 @import 'components/headline';
 @import 'components/reviews';
@@ -23,6 +24,13 @@ $light-gray: #F8FAF9;
 @import 'components/radio';
 
 //components
+
+
+//z-indexes
+
+$z-fixed-menu:100;
+
+//z-indexes
 
 body{
     font-family: 'Play', sans-serif;
