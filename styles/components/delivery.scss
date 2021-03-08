@@ -1,5 +1,7 @@
 .form{
     display: flex;
+    color: white;
+    margin-bottom: 40px;
 }
 
 .form__column{
@@ -18,14 +20,15 @@
 .form__block{
     flex:1;
     margin-right: 25px;
+    box-sizing:border-box;
     &:last-child{
         margin-right: 0;
     }
 }
 
 .form__input{
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 18px 12px;
     border: none;
     border: solid 3px transparent;
     border-radius: 4px;
