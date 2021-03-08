@@ -1,9 +1,27 @@
 .btn{
     padding: 21px 41px;
     border-radius: 100px;
+    border: none;
     text-transform: uppercase;
+    &:focus{
+        outline: none;
+        
+    }
 }
 .btn--red{
     background-color: $red;
     color: $white;
+    &:hover{
+        background-color:$darkred;
+        transition: 0.7s;
+    }
+}
+
+.btn--transparrent{
+    background-color: transparent;
+    color: white;
+    &:hover{
+        color: #000;
+        transition: 0.7s;
+    }
 }

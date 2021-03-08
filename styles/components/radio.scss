@@ -1,17 +1,35 @@
 .radio {
     display: flex;
     cursor: pointer;
+    user-select: none;
+
+    &__checkbox {
+        .radio__visible { 
+            border-radius: 0;
+
+            &::before {
+                background:url("/img/icons/checkmark.png")center / contain no-repeat;
+                border-radius: 0;
+                color: $red;
+            }
+        }
+    }
 }
 
-.radio__element{
+.radio__element {
     display: none;
 
-    &:checked ∞§¢∞§%%$% 
+    &:checked ~ .radio__visible {
+        &::before {
+            display: block;
+        }
+    }
 }
 
 .radio__visible {
     width: 25px;
     height: 25px;
+    margin-right: 10px;
     border-radius: 50%;
     position: relative;
     background: white;
@@ -23,6 +41,7 @@
         background-color: $red;
         border-radius: 50%;
         position: absolute;
+        display: none;
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);

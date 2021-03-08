@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
 .section-greeting {
+  padding-bottom: 25px;
   background: url("../img/content/Solo--white.png") no-repeat left 700px top 135px;
 }
 .section-greeting .top-line {
@@ -213,12 +214,29 @@
 .btn {
   padding: 21px 41px;
   border-radius: 100px;
+  border: none;
   text-transform: uppercase;
+}
+.btn:focus {
+  outline: none;
 }
 
 .btn--red {
   background-color: #E01F3D;
   color: #fff;
+}
+.btn--red:hover {
+  background-color: #CA1B36;
+  transition: 0.7s;
+}
+
+.btn--transparrent {
+  background-color: transparent;
+  color: white;
+}
+.btn--transparrent:hover {
+  color: #000;
+  transition: 0.7s;
 }
 
 .form {
@@ -268,19 +286,41 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form__btns {
+  margin-top: 48px;
 }
 
 .radio {
   display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.radio__checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio__checkbox .radio__visible::before {
+  background: url("/img/icons/checkmark.png") center/contain no-repeat;
+  border-radius: 0;
+  color: #E01F3D;
 }
 
 .radio__element {
   display: none;
 }
+.radio__element:checked ~ .radio__visible::before {
+  display: block;
+}
 
 .radio__visible {
   width: 25px;
   height: 25px;
+  margin-right: 10px;
   border-radius: 50%;
   position: relative;
   background: white;
@@ -292,6 +332,7 @@
   background-color: #E01F3D;
   border-radius: 50%;
   position: absolute;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

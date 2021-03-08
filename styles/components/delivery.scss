@@ -47,4 +47,11 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form__btns{
+    margin-top: 48px;
 }
