@@ -8,7 +8,7 @@
             border-radius: 0;
 
             &::before {
-                background:url("/img/icons/checkmark.png")center / contain no-repeat;
+                background:url("../img/icons/checkmark.png")center / contain no-repeat;
                 border-radius: 0;
                 color: $red;
             }
