@@ -69,7 +69,18 @@
 }
 .section-greeting .features-small .features-small__menu {
   display: inline-flex;
-  gap: 40px;
+}
+.section-greeting .features-small .features-small__menu .features-small__item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.section-greeting .features-small .features-small__menu .features-small__item .features-small__icon {
+  width: 45px;
+  margin-right: 6px;
+}
+.section-greeting .features-small .features-small__menu .features-small__item .features-small__text {
+  max-width: 114px;
 }
 
 .section-features {

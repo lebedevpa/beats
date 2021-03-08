@@ -70,7 +70,22 @@
         margin-bottom: 50px;
         .features-small__menu{
             display: inline-flex;
-            gap: 40px;
+
+            .features-small__item{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                .features-small__icon{
+                    width: 45px;
+                    margin-right: 6px;
+                }
+                .features-small__text{
+                    max-width: 114px;
+                }
+            }
+
+            
+
         }
     }
 }
