@@ -421,7 +421,7 @@
   border-radius: 0;
 }
 .radio__checkbox .radio__visible::before {
-  background: url("/img/icons/checkmark.png") center/contain no-repeat;
+  background: url("../../img/icons/checkmark.png") center/contain no-repeat;
   border-radius: 0;
   color: #E01F3D;
 }
