@@ -163,7 +163,7 @@
   height: 21px;
   top: 20%;
   right: -59px;
-  background: url("/img/icons/spot-decor.png") no-repeat;
+  background: url("../../img/icons/spot-decor.png") no-repeat;
 }
 .section-features .features .features__menu .features__item:last-child::before {
   display: none;
