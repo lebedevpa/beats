@@ -2,6 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
 .section-greeting {
   padding-bottom: 25px;
+  position: relative;
+}
+.section-greeting::after {
+  content: "";
+  background: url("../../img/icons/Rectangle14.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: -4%;
+  right: 20%;
 }
 .section-greeting .nav-menu {
   flex: 1;
@@ -316,6 +327,17 @@
   background: url("../../img/form-bg.png") center/cover no-repeat #292929;
   padding-top: 38px;
   padding-bottom: 85px;
+  position: relative;
+}
+.section--black::after {
+  content: "";
+  background: url("../../img/icons/Polygon2.png") no-repeat;
+  width: 55px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  top: -4%;
+  right: 20%;
 }
 .section--black h2 {
   text-align: center;
@@ -405,6 +427,9 @@
   justify-content: flex-start;
   gap: 16px;
   margin-bottom: 16px;
+}
+.form__controls:first-child {
+  margin-top: 40px;
 }
 
 .form__btns {

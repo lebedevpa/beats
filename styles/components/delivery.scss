@@ -54,6 +54,9 @@
     justify-content: flex-start;
     gap: 16px;
     margin-bottom: 16px;
+    &:first-child{
+        margin-top: 40px;
+    }
 }
 
 .form__btns{

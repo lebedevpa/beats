@@ -9,6 +9,17 @@
     background: url('../../img/form-bg.png') center / cover no-repeat $black;
     padding-top: 38px;
     padding-bottom: 85px;
+    position: relative;
+    &::after{
+        content: "";
+        background: url('../../img/icons/Polygon2.png') no-repeat;
+        width: 55px;
+        height: 55px;
+        display: block;
+        position: absolute;
+        top: -4%;
+        right: 20%;
+    }
     h2{
         text-align: center;
         margin-bottom: 61px;
