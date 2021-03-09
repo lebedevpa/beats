@@ -33,7 +33,7 @@
 .section-greeting .telephone .telephone__link:before {
   content: "";
   display: inline-flex;
-  background: url("img/icons/phone.png") no-repeat;
+  background: url("../../img/icons/phone.png") no-repeat;
   background-size: contain;
   width: 14px;
   height: 14px;
@@ -313,7 +313,7 @@
 }
 
 .section--black {
-  background: url("img/form-bg.png") center/cover no-repeat #292929;
+  background: url("../../img/form-bg.png") center/cover no-repeat #292929;
   padding-top: 38px;
   padding-bottom: 85px;
 }
