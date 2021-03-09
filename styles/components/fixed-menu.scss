@@ -1,7 +1,7 @@
 .fixed-menu{
     position: fixed;
-    top: 25%;
-    right: 8%;
+    top: 20%;
+    right: calc(50% - 600px);
 }
 .fixed-menu__item{
     margin-bottom: 5px;
@@ -17,7 +17,7 @@
 
 .fixed-menu__link{
     width: 18px;
-    height: 19px;
+    height: 18px;
     border-radius: 50%;
     border: 1px solid transparent;
     display: block;

@@ -1,20 +1,5 @@
 .section-greeting{
     padding-bottom: 25px;
-    .top-line{
-        margin-bottom: 50px;
-    }
-    background: url('../img/content/Solo--white.png') no-repeat left 700px top 135px ;
-   .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 0;
-        .logo{
-            width: 40px;
-            height: 40px;
-        }
-    }
     .nav-menu{
         flex:1;
         margin-right: 46px;
@@ -22,7 +7,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
+            padding: 0;
+            margin: 0;
             .nav-menu__link{
                 font-weight: normal;
                 font-size: 18px;
@@ -44,7 +30,7 @@
             &:before{
                 content: "";
                 display: inline-flex;
-                background: url('../img/icons/phone.png') no-repeat;
+                background: url('/img/icons/phone.png') no-repeat;
                 background-size: contain;
                 width: 14px;
                 height: 14px;
@@ -53,37 +39,58 @@
         }
         
     }
-    .half-section{
-        width: 50%;
-        margin-bottom: 70px;
-    
-        .half-section__text{
-            font-family: Alegreya Sans; 
-            font-style: normal;
-            font-weight: normal;
-            font-size: 21px;
-            line-height: 25px;
-            margin-bottom: 56px;
-        }
+}    
+
+.top-line{
+    margin-bottom: 50px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-right: 38px;
     }
-    .features-small{
-        margin-bottom: 50px;
-        .features-small__menu{
-            display: inline-flex;
+}
+.hero{
+    display: flex;
+}
 
-            .features-small__item{
-                display: flex;
-                align-items: center;
-                margin-right: 20px;
-                .features-small__icon{
-                    width: 41px;
-                    margin-right: 6px;
-                }
-                .features-small__text{
-                    max-width: 114px;
-                }
+.features-small{
+    margin-bottom: 50px;
+    .features-small__menu{
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+
+        .features-small__item{
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            .features-small__icon{
+                width: 41px;
+                margin-right: 6px;
             }
-
+            .features-small__text{
+                max-width: 114px;
+            }
         }
+
+    }
+}
+
+.section__column{
+    width: 50%;
+    .section__text{
+        font-family: Alegreya Sans; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 56px;
     }
 }
