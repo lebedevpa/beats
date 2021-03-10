@@ -47,6 +47,9 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &--delivery{
+        justify-content: space-evenly;
+    }
 }
 
 *,::before,::after{box-sizing: border-box;}

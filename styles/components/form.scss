@@ -1,7 +1,6 @@
 .form{
     display: flex;
     color: white;
-    margin-bottom: 40px;
 }
 
 .form__column{
@@ -14,7 +13,7 @@
 
 .form__row{
     display: flex;
-    margin-bottom: 36px;
+    margin-bottom: 11px;
 }
 
 .form__block{
@@ -33,6 +32,7 @@
 .form__input{
     width: 100%;
     padding: 18px 12px;
+    height: 58px;
     border: none;
     border: solid 3px transparent;
     border-radius: 4px;
@@ -40,6 +40,7 @@
     &--textarea{
         height: 152px;
         resize: none;
+        margin-bottom: 20px;
     }
 
     &:focus{

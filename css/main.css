@@ -37,6 +37,9 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+.container--delivery {
+  justify-content: space-evenly;
+}
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -418,13 +421,14 @@ img {
   align-items: center;
   gap: 6px;
 }
-.usernames .username__avatar {
+.usernames .username {
   border-radius: 50%;
   width: 80px;
   height: 80px;
   border: 4px solid white;
+  overflow: hidden;
 }
-.usernames .username__avatar:hover {
+.usernames .username:hover {
   border: 4px solid #E01F3D;
   transition: 0.7s;
 }
@@ -461,7 +465,6 @@ img {
 .form {
   display: flex;
   color: white;
-  margin-bottom: 40px;
 }
 
 .form__column {
@@ -474,7 +477,7 @@ img {
 
 .form__row {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 11px;
 }
 
 .form__block {
@@ -493,6 +496,7 @@ img {
 .form__input {
   width: 100%;
   padding: 18px 12px;
+  height: 58px;
   border: none;
   border: solid 3px transparent;
   border-radius: 4px;
@@ -500,6 +504,7 @@ img {
 .form__input--textarea {
   height: 152px;
   resize: none;
+  margin-bottom: 20px;
 }
 .form__input:focus {
   border-color: #E01F3D;
