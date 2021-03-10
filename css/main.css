@@ -292,7 +292,7 @@ img {
   height: 21px;
   top: 20%;
   right: -59px;
-  background: url("../../img/icons/spot-decor.png") no-repeat;
+  background: url("../img/icons/spot-decor.png") no-repeat;
 }
 .features__item:last-child::before {
   display: none;
