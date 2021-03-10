@@ -6,8 +6,8 @@
     color: $black;
     text-transform: uppercase;
     margin-bottom: 18px;
-}
-
-.headline--white{
-    color: white;
+    &--white{
+        color: white;
+        text-align: center;
+    }
 }

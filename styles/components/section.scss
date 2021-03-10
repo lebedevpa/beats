@@ -1,0 +1,53 @@
+.section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    border: 1px solid $red;
+    
+    &--greeting{
+        padding-bottom: 25px;
+        position: relative;
+        background-color: white;
+        &::after{
+            content: "";
+            background: url('../../img/icons/Rectangle14.png') no-repeat;
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            bottom: -4%;
+            right: 20%;
+            
+        }  
+    }
+
+    &--features{
+        text-align: center;
+        padding-top: 101px;
+    }
+
+    &--gray{
+        background-color: #f5f5f5;
+    }
+    &--light-gray{
+        background-color: $light-gray;
+    }
+    &--black{
+        background: url('../../img/form-bg.png') center / cover no-repeat $black;
+        padding-top: 38px;
+        padding-bottom: 85px;
+        position: relative;
+        &::after{
+            content: "";
+            background: url('../../img/icons/Polygon2.png') no-repeat;
+            width: 55px;
+            height: 55px;
+            display: block;
+            position: absolute;
+            top: -4%;
+            right: 20%;
+        }
+       
+    }   
+}

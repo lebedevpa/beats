@@ -1,0 +1,17 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.hero__column{
+    width: 50%;
+    
+}
+.hero__text{
+    font-family: Alegreya Sans; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 56px;
+}

@@ -11,26 +11,7 @@ $light-gray: #F8FAF9;
 
 //colors
 
-//components
-
-@import 'components/greeting';
-@import 'components/fixed-menu';
-@import 'components/features';
-@import 'components/headline';
-@import 'components/reviews';
-@import 'components/section-colors';
-@import 'components/buttons'; 
-@import 'components/delivery';
-@import 'components/radio';
-
-//components
-
-
-//z-indexes
-
-$z-fixed-menu:100;
-
-//z-indexes
+// main presets
 
 body{
     font-family: 'Play', sans-serif;
@@ -50,6 +31,11 @@ a{
     color: $black;
 }
 
+h1,h2,h3,h4,h5,h6, p{
+    padding: 0;
+    margin: 0;
+}
+
 img{
     width: 100%;
 }
@@ -57,9 +43,46 @@ img{
 .container{
     width: 940px;
     margin: 0 auto;
+    height: 100%;
 }
 
 *,::before,::after{box-sizing: border-box;}
+
+
+// main presets
+
+
+
+//components
+
+@import 'components/section';
+@import 'components/top-line';
+@import 'components/top-block';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/nav-menu';
+@import 'components/hero';
+@import 'components/telephone';
+@import 'components/fixed-menu';
+@import 'components/features-small';
+@import 'components/features';
+@import 'components/headline';
+@import 'components/reviews'; 
+@import 'components/buttons'; 
+@import 'components/form';
+@import 'components/radio';
+
+//components
+
+
+
+
+//z-indexes
+
+$z-fixed-menu:100;
+
+//z-indexes
+
 
 
 
