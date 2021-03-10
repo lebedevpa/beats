@@ -53,7 +53,7 @@ img {
 }
 .section--greeting::after {
   content: "";
-  background: url("../../img/icons/Rectangle14.png") no-repeat;
+  background: url("../img/icons/Rectangle14.png") no-repeat;
   width: 50px;
   height: 50px;
   display: block;
@@ -72,14 +72,14 @@ img {
   background-color: #F8FAF9;
 }
 .section--black {
-  background: url("../../img/form-bg.png") center/cover no-repeat #292929;
+  background: url("../img/form-bg.png") center/cover no-repeat #292929;
   padding-top: 38px;
   padding-bottom: 85px;
   position: relative;
 }
 .section--black::after {
   content: "";
-  background: url("../../img/icons/Polygon2.png") no-repeat;
+  background: url("../img/icons/Polygon2.png") no-repeat;
   width: 55px;
   height: 55px;
   display: block;
