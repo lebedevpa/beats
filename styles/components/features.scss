@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap:20px;
+    gap:55px;
     margin-top: 62px;
 }
 
@@ -38,6 +38,7 @@
     height: 128px;
     background: #F2F5F4;
     border-radius: 50%;
+    margin-bottom: 24px;
     img{
         width: 50%;
     }
@@ -49,6 +50,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 7px;
 }
 .features__item-text{
     font-family: Play;
@@ -61,7 +63,4 @@
 .top-block__title{
     margin: 0;
     padding: 0;
-}
-.top-block__text{
-    margin-bottom: 62px;
 }

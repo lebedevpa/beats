@@ -44,6 +44,9 @@ img{
     width: 940px;
     margin: 0 auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 *,::before,::after{box-sizing: border-box;}
@@ -61,6 +64,7 @@ img{
 @import 'components/header';
 @import 'components/logo';
 @import 'components/nav-menu';
+@import 'components/greeting';
 @import 'components/hero';
 @import 'components/telephone';
 @import 'components/fixed-menu';
@@ -75,13 +79,6 @@ img{
 //components
 
 
-
-
-//z-indexes
-
-$z-fixed-menu:100;
-
-//z-indexes
 
 
 

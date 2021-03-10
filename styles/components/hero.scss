@@ -15,3 +15,18 @@
     line-height: 25px;
     margin-bottom: 56px;
 }
+
+.hero__picture{
+    position: absolute;
+    right: 0;
+    top:-19px;
+    right: 19px;
+    width: 489px;
+    height: 489px;
+}
+
+.hero__img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
