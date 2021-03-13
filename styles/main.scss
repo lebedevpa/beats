@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
 //fonts
  
+
+//layout
+
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+
+
+//layout
+
 $gray: #666666;
 $red: #E01F3D;
 $darkred:#CA1B36;   
@@ -13,12 +23,15 @@ $light-gray: #F8FAF9;
 
 // main presets
 
+@import 'media';
+
+
 body{
     font-family: 'Play', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 19px;  
+    font-size: $baseFontSize;
+    line-height: rem(19px);  
     color: $gray;
 }
 ul{
@@ -41,7 +54,8 @@ img{
 }
 
 .container{
-    width: 940px;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     height: 100%;
     display: flex;

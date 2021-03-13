@@ -2,18 +2,18 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 650px;
-    border: 1px solid $red;
+    min-height: rem(650px);
+    border: rem(1px) solid $red;
     
     &--greeting{
-        padding-bottom: 25px;
+        padding-bottom: rem(25px);
         position: relative;
         background-color: white;
         &::after{
             content: "";
             background: url('../img/icons/Rectangle14.png') no-repeat;
-            width: 50px;
-            height: 50px;
+            width: rem(50px);
+            height: rem(50px);
             display: block;
             position: absolute;
             bottom: -4%;
@@ -34,14 +34,14 @@
     }
     &--black{
         background: url('../img/form-bg.png') center / cover no-repeat $black;
-        padding-top: 38px;
-        padding-bottom: 85px;
+        padding-top: rem(38px);
+        padding-bottom: rem(85px);
         position: relative;
         &::after{
             content: "";
             background: url('../img/icons/Polygon2.png') no-repeat;
-            width: 55px;
-            height: 55px;
+            width: rem(55px);
+            height: rem(55px);
             display: block;
             position: absolute;
             top: -4%;

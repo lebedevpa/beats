@@ -1,6 +1,6 @@
 .nav-menu{
     
-      margin-right: 40px;
+      margin-right: rem(40px);
 }
 
 .nav-menu__list{
@@ -12,7 +12,7 @@
 }
 
 .nav-menu__item{
-    margin-right: 27px;
+    margin-right: rem(27px);
     &:last-child {
         margin: 0;
     }
@@ -21,7 +21,7 @@
 .nav-menu__link{
     font-family: Alegreya Sans;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: rem(18px);
+    line-height: rem(30px);
     color:$black;
 }

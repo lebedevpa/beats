@@ -1,5 +1,5 @@
 .features-small{
-    margin-bottom: 50px;   
+    margin-bottom: rem(50px);   
 }
 
 .features-small__menu{
@@ -11,15 +11,15 @@
 .features-small__item{
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .features-small__icon{
-    width: 41px;
-    margin-right: 6px;
+    width: rem(41px);
+    margin-right: rem(6px);
 }
 
 
 .features-small__text{
-    max-width: 114px;
+    max-width: rem(114px);
 }

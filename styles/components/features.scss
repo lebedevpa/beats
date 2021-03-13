@@ -1,5 +1,5 @@
 .features{
-    margin-bottom: 100px;
+    margin-bottom: rem(100px);
 }
 
 .features__menu{
@@ -7,21 +7,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap:55px;
-    margin-top: 62px;
+    gap:rem(55px);
+    margin-top: rem(62px);
 }
 
 .features__item{
-    width: 250px;
+    width: rem(250px);
     position: relative;
     &::before{
         content: "";
         display: block;
         position: absolute;
-        width: 67px;
-        height: 21px;
+        width: rem(67px);
+        height: rem(21px);
         top: 20%;
-        right: -59px;
+        right: rem(-59px);
         background: url('../img/icons/spot-decor.png') no-repeat;
     }
     &:last-child::before{
@@ -34,11 +34,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     background: #F2F5F4;
     border-radius: 50%;
-    margin-bottom: 24px;
+    margin-bottom: rem(24px);
     img{
         width: 50%;
     }
@@ -49,15 +49,15 @@
     font-family: Play;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 7px;
+    font-size: rem(24px);
+    margin-bottom: rem(7px);
 }
 .features__item-text{
     font-family: Play;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: rem(16px);
+    line-height: rem(19px);
 }
 
 .top-block__title{

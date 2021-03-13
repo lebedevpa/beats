@@ -11,18 +11,18 @@
     font-family: Alegreya Sans; 
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 56px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(56px);
 }
 
 .hero__picture{
     position: absolute;
     right: 0;
-    top:-19px;
-    right: 19px;
-    width: 489px;
-    height: 489px;
+    top:rem(-19px);
+    right: rem(19px);
+    width: rem(489px);
+    height: rem(489px);
 }
 
 .hero__img{
