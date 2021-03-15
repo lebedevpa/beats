@@ -6,6 +6,9 @@
     color: $black;
     text-transform: uppercase;
     margin-bottom: rem(18px);
+    @include tablets{
+        white-space: nowrap;
+    }
     &--white{
         color: white;
         text-align: center;

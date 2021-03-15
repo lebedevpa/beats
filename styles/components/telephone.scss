@@ -7,6 +7,7 @@
     font-weight: normal;
     font-size: rem(18px);
     line-height: rem(18px);
+    white-space: nowrap;
 
     &:before{
         content: "";
@@ -16,5 +17,6 @@
         width: rem(14px);
         height: rem(14px);
         margin-right: rem(6px);
+        flex-shrink: 0;
     }
 }

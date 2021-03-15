@@ -14,6 +14,8 @@
     padding: rem(42px);
     position: relative;
     z-index: -2;
+
+
     &:after{
         content: "";
         display: block;
@@ -24,7 +26,13 @@
         height: rem(83px);
         border-radius: 50%;
         z-index: -1;
-    }    
+
+    }
+    
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .review__title{
@@ -40,6 +48,10 @@
     img{
         width: rem(253px);
         height: rem(264px);
+        @include tablets{
+            width: rem(130px);
+            height: rem(130px);
+        }
     }
 }
 

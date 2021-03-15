@@ -21,14 +21,15 @@
             position: absolute;
             bottom: -4%;
             right: 20%;
-            @include tablets{
-                    display: none;
-                }
+            
         }  
     }
 
     &--features{
         text-align: center;
+        @include tablets{
+            padding-top: 100px;
+        }
     }
 
     &--gray{

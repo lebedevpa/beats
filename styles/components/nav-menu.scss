@@ -1,6 +1,6 @@
 .nav-menu{
     
-    margin-right: rem(40px);
+    margin-right: rem(30px);
     @include tablets {
         display: none;
     }
@@ -10,7 +10,8 @@
 .nav-menu__list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
@@ -28,4 +29,5 @@
     font-size: rem(18px);
     line-height: rem(30px);
     color:$black;
+    white-space: nowrap;
 }

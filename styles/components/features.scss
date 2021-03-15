@@ -1,5 +1,6 @@
 .features{
     margin-bottom: rem(100px);
+    height: auto;
 }
 
 .features__menu{
@@ -24,6 +25,9 @@
         right: -35%;
         background: url('../img/icons/spot-decor.png') no-repeat;
         background-size: contain;
+        @include tablets{
+            display: none;
+        }
     }   
     &:last-child::before{
         display: none;
