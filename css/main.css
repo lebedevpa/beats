@@ -66,6 +66,11 @@ img {
   min-height: 36.1111111111rem;
   border: 0.0555555556rem solid #E01F3D;
 }
+@media screen and (max-width: 768px) {
+  .section {
+    height: auto;
+  }
+}
 .section--greeting {
   padding-bottom: 1.3888888889rem;
   position: relative;
@@ -218,11 +223,6 @@ img {
   font-size: 1.1666666667rem;
   line-height: 1.3888888889rem;
   margin-bottom: 3.1111111111rem;
-}
-@media screen and (max-width: 768px) {
-  .hero__text {
-    margin-bottom: 0;
-  }
 }
 
 .hero__picture {

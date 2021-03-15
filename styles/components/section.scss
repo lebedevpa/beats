@@ -4,6 +4,9 @@
     align-items: center;
     min-height: rem(650px);
     border: rem(1px) solid $red;
+    @include tablets{
+        height: auto;
+    }
     
     &--greeting{
         padding-bottom: rem(25px);
