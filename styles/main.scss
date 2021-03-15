@@ -78,7 +78,12 @@ img{
     flex-direction: column;
     justify-content: center;
     &--delivery{
+        
         justify-content: space-evenly;
+        
+        @include tablets{
+            margin-top: rem(100px);
+        }
     }
 }
 
