@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap:rem(55px);
     margin-top: rem(62px);
     @include phones {
         flex-direction: column;
@@ -16,7 +15,12 @@
 }
 
 .features__item{
-    width: rem(250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: rem(267px);
+    min-height: rem(267px);
     position: relative;
     &::before{
         content: "";
@@ -25,13 +29,16 @@
         width: rem(67px);
         height: rem(21px);
         top: 20%;
-        right: -35%;
+        right: 0;
         background: url('../img/icons/spot-decor.png') no-repeat;
         background-size: contain;
         @include tablets{
             display: none;
         }
     }   
+    &:first-child::before{
+        right: -10%;
+    }
     &:last-child::before{
         display: none;
     }
@@ -74,6 +81,7 @@
     font-weight: bold;
     font-size: rem(24px);
     margin-bottom: rem(7px);
+    white-space: nowrap;
 }
 .features__item-text{
     font-family: Play;

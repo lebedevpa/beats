@@ -363,7 +363,6 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 3.0555555556rem;
   margin-top: 3.4444444444rem;
 }
 @media screen and (max-width: 480px) {
@@ -373,7 +372,12 @@ img {
 }
 
 .features__item {
-  width: 13.8888888889rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 14.8333333333rem;
+  min-height: 14.8333333333rem;
   position: relative;
 }
 .features__item::before {
@@ -383,7 +387,7 @@ img {
   width: 3.7222222222rem;
   height: 1.1666666667rem;
   top: 20%;
-  right: -35%;
+  right: 0;
   background: url("../img/icons/spot-decor.png") no-repeat;
   background-size: contain;
 }
@@ -391,6 +395,9 @@ img {
   .features__item::before {
     display: none;
   }
+}
+.features__item:first-child::before {
+  right: -10%;
 }
 .features__item:last-child::before {
   display: none;
@@ -437,6 +444,7 @@ img {
   font-weight: bold;
   font-size: 1.3333333333rem;
   margin-bottom: 0.3888888889rem;
+  white-space: nowrap;
 }
 
 .features__item-text {
