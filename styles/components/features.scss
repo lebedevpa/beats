@@ -21,9 +21,10 @@
         width: rem(67px);
         height: rem(21px);
         top: 20%;
-        right: rem(-59px);
+        right: -35%;
         background: url('../img/icons/spot-decor.png') no-repeat;
-    }
+        background-size: contain;
+    }   
     &:last-child::before{
         display: none;
     }

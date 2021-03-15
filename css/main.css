@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
+html {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   line-height: 1.0555555556rem;
   color: #666666;
 }
@@ -54,6 +67,7 @@ img {
   border: 0.0555555556rem solid #E01F3D;
 }
 .section--greeting {
+  max-height: 100%;
   padding-bottom: 1.3888888889rem;
   position: relative;
   background-color: white;
@@ -67,6 +81,11 @@ img {
   position: absolute;
   bottom: -4%;
   right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .section--greeting::after {
+    display: none;
+  }
 }
 .section--features {
   text-align: center;
@@ -111,6 +130,12 @@ img {
   padding: 1.3333333333rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  .telephone__link.header__telephone {
+    display: none;
+  }
+}
+
 .logo {
   width: 2.2222222222rem;
   height: 2.2222222222rem;
@@ -119,6 +144,11 @@ img {
 
 .nav-menu {
   margin-right: 2.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
 }
 
 .nav-menu__list {
@@ -159,6 +189,26 @@ img {
 .hero__column {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .hero__column {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__column::before {
+    content: url("/img/content/Solo--white.png");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    padding: 0 10%;
+  }
+}
 
 .hero__text {
   font-family: Alegreya Sans;
@@ -168,6 +218,11 @@ img {
   line-height: 1.3888888889rem;
   margin-bottom: 3.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .hero__text {
+    margin-bottom: 0;
+  }
+}
 
 .hero__picture {
   position: absolute;
@@ -176,6 +231,11 @@ img {
   right: 1.0555555556rem;
   width: 27.1666666667rem;
   height: 27.1666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__picture {
+    display: none;
+  }
 }
 
 .hero__img {
@@ -246,6 +306,11 @@ img {
 .features-small {
   margin-bottom: 2.7777777778rem;
 }
+@media screen and (max-width: 768px) {
+  .features-small {
+    display: none;
+  }
+}
 
 .features-small__menu {
   padding: 0;
@@ -292,8 +357,9 @@ img {
   width: 3.7222222222rem;
   height: 1.1666666667rem;
   top: 20%;
-  right: -3.2777777778rem;
+  right: -35%;
   background: url("../img/icons/spot-decor.png") no-repeat;
+  background-size: contain;
 }
 .features__item:last-child::before {
   display: none;

@@ -21,16 +21,32 @@ $light-gray: #F8FAF9;
 
 //colors
 
+
+//breakpoint
+
+$tablets: 768px;
+$phones: 480px;
+
+//breakpoint
+
 // main presets
 
 @import 'media';
 
+html{
+    font-size: $baseFontSize;
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
 
 body{
     font-family: 'Play', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: $baseFontSize;
     line-height: rem(19px);  
     color: $gray;
 }

@@ -5,3 +5,10 @@
     align-items: center;
     padding: rem(24px) 0;
 }
+
+.telephone__link.header__telephone{
+    @include tablets {
+        display: none;
+    }
+
+}

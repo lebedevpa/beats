@@ -1,6 +1,10 @@
 .nav-menu{
     
-      margin-right: rem(40px);
+    margin-right: rem(40px);
+    @include tablets {
+        display: none;
+    }
+
 }
 
 .nav-menu__list{

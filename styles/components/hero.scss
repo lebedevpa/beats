@@ -5,8 +5,27 @@
 }
 .hero__column{
     width: 50%;
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &::before{
+            content: url('/img/content/Solo--white.png');
+        }
+    }
     
 }
+
+.hero__title{
+    @include tablets {
+        padding: 0 10%;
+    }
+}
+
 .hero__text{
     font-family: Alegreya Sans; 
     font-style: normal;
@@ -14,6 +33,10 @@
     font-size: rem(21px);
     line-height: rem(25px);
     margin-bottom: rem(56px);
+    @include tablets{
+        margin-bottom: 0;
+    }
+
 }
 
 .hero__picture{
@@ -23,6 +46,9 @@
     right: rem(19px);
     width: rem(489px);
     height: rem(489px);
+    @include tablets{
+        display: none;
+    }
 }
 
 .hero__img{
