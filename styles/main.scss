@@ -78,7 +78,6 @@ img{
     flex-direction: column;
     justify-content: center;
     &--delivery{
-        
         justify-content: space-evenly;
         
         @include tablets{
@@ -87,7 +86,9 @@ img{
     }
 }
 
-*,::before,::after{box-sizing: border-box;}
+*,::before,::after{
+    box-sizing: border-box;
+}
 
 
 // main presets

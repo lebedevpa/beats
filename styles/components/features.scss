@@ -10,6 +10,9 @@
     justify-content: space-around;
     gap:rem(55px);
     margin-top: rem(62px);
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .features__item{
@@ -32,6 +35,15 @@
     &:last-child::before{
         display: none;
     }
+    @include phones{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
 }
 
 .features__img{
@@ -44,11 +56,17 @@
     background: #F2F5F4;
     border-radius: 50%;
     margin-bottom: rem(24px);
+    @include phones{
+        margin-right: rem(12px);
+    }
     img{
         width: 50%;
     }
 }
 
+.features__description{
+    width: 70%;
+}
 .features__item-title{
     color: $black;
     font-family: Play;

@@ -15,8 +15,12 @@
         text-align: center;
         margin-bottom: rem(50px);
         &::before{
-            content: url('../img/content/Solo--white.png');
+            content: '';
+            width: rem(323px);
+            height: rem(323px);
+            background: url('../img/content/Solo--white.png')center center / contain no-repeat;
             transform: scale(0.8);
+
         }
     }
     
@@ -25,6 +29,9 @@
 .hero__title{
     @include tablets {
         padding: 0 10%;
+    }
+    @include phones{
+       padding: 0 16%;
     }
 }
 
@@ -45,12 +52,14 @@
     right: rem(19px);
     width: rem(489px);
     height: rem(489px);
+    background: url('../img/content/Solo--white.png')center center / contain no-repeat;
     @include tablets{
         display: none;
     }
 }
 
 .hero__img{
+
     max-width: 100%;
     height: auto;
     display: block;

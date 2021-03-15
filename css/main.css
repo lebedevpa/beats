@@ -213,7 +213,10 @@ img {
     margin-bottom: 2.7777777778rem;
   }
   .hero__column::before {
-    content: url("../img/content/Solo--white.png");
+    content: "";
+    width: 17.9444444444rem;
+    height: 17.9444444444rem;
+    background: url("../img/content/Solo--white.png") center center/contain no-repeat;
     transform: scale(0.8);
   }
 }
@@ -221,6 +224,11 @@ img {
 @media screen and (max-width: 768px) {
   .hero__title {
     padding: 0 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    padding: 0 16%;
   }
 }
 
@@ -240,6 +248,7 @@ img {
   right: 1.0555555556rem;
   width: 27.1666666667rem;
   height: 27.1666666667rem;
+  background: url("../img/content/Solo--white.png") center center/contain no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__picture {
@@ -357,6 +366,11 @@ img {
   gap: 3.0555555556rem;
   margin-top: 3.4444444444rem;
 }
+@media screen and (max-width: 480px) {
+  .features__menu {
+    flex-direction: column;
+  }
+}
 
 .features__item {
   width: 13.8888888889rem;
@@ -381,6 +395,16 @@ img {
 .features__item:last-child::before {
   display: none;
 }
+@media screen and (max-width: 480px) {
+  .features__item {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+}
 
 .features__img {
   display: flex;
@@ -393,8 +417,17 @@ img {
   border-radius: 50%;
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 480px) {
+  .features__img {
+    margin-right: 0.6666666667rem;
+  }
+}
 .features__img img {
   width: 50%;
+}
+
+.features__description {
+  width: 70%;
 }
 
 .features__item-title {
@@ -431,6 +464,11 @@ img {
 @media screen and (max-width: 768px) {
   .headline {
     white-space: nowrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline {
+    white-space: normal;
   }
 }
 .headline--white {
@@ -572,6 +610,11 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 0 19%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
   }
 }
 

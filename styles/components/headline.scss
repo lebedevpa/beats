@@ -9,6 +9,9 @@
     @include tablets{
         white-space: nowrap;
     }
+    @include phones{
+        white-space: normal;
+    }
     &--white{
         color: white;
         text-align: center;
