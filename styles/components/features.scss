@@ -29,21 +29,22 @@
         width: rem(67px);
         height: rem(21px);
         top: 20%;
-        right: 0;
+        right: -5%;
         background: url('../img/icons/spot-decor.png') no-repeat;
         background-size: contain;
         @include tablets{
             display: none;
         }
-    }   
+    }
     &:first-child::before{
-        right: -10%;
+        right:-15%;
     }
     &:last-child::before{
         display: none;
     }
     @include phones{
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 0;
         margin: 0;
