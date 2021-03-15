@@ -67,7 +67,6 @@ img {
   border: 0.0555555556rem solid #E01F3D;
 }
 .section--greeting {
-  max-height: 100%;
   padding-bottom: 1.3888888889rem;
   position: relative;
   background-color: white;
@@ -200,7 +199,7 @@ img {
     text-align: center;
   }
   .hero__column::before {
-    content: url("/img/content/Solo--white.png");
+    content: url("../img/content/Solo--white.png");
   }
 }
 
