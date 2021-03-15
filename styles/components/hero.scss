@@ -13,8 +13,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-bottom: rem(50px);
         &::before{
             content: url('../img/content/Solo--white.png');
+            transform: scale(0.7);
         }
     }
     
