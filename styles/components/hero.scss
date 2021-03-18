@@ -27,12 +27,7 @@
 }
 
 .hero__title{
-    @include tablets {
-        padding: 0 10%;
-    }
-    @include phones{
-       padding: 0 16%;
-    }
+    max-width: rem(665px);
 }
 
 .hero__text{
@@ -42,15 +37,16 @@
     font-size: rem(21px);
     line-height: rem(25px);
     margin-bottom: rem(56px);
-    
+    @include tablets{
+        max-width: rem(371px);
+    }
 }
 
 .hero__picture{
     position: absolute;
     right: 0;
     top:rem(-19px);
-    right: rem(19px);
-    width: rem(489px);
+    width: 50%;
     height: rem(489px);
     background: url('../img/content/Solo--white.png')center center / contain no-repeat;
     @include tablets{
@@ -59,7 +55,6 @@
 }
 
 .hero__img{
-
     max-width: 100%;
     height: auto;
     display: block;

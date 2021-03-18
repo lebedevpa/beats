@@ -1,0 +1,44 @@
+.footer--container{
+    width: 100%;
+    background: white;
+}
+.footer{
+    width: $containerWidth;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    align-items: center;
+}
+.footer__address{
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(21px);
+    line-height: rem(24px);
+}
+.footer__telephone{
+    margin-left: rem(18px);
+
+    @include tablets{
+        color: $red;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
+    &:before{
+        @include tablets{
+            background: url('../img/icons/phone--red.png') no-repeat;
+        }
+        
+    }
+}
+.social__item{
+    background-color: #000;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.footer__row{
+    padding: rem(30px) 0;
+}

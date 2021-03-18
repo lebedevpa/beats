@@ -5,9 +5,6 @@
     align-items: center;
     min-height: rem(650px);
     border: rem(1px) solid $red;
-    @include tablets{
-        height: auto;
-    }
     
     &--greeting{
         padding-bottom: rem(25px);
@@ -55,5 +52,10 @@
             right: 20%;
         }
        
-    }   
+    }  
+    &--contacts{
+            background: url('../img/content/map.png') center center / cover no-repeat;
+            align-items: flex-end;
+        
+    }
 }

@@ -8,9 +8,13 @@
     font-size: rem(18px);
     line-height: rem(18px);
     white-space: nowrap;
+    position: relative;
 
     &:before{
         content: "";
+        position: absolute;
+        top: rem(2px);
+        left:rem(-18px);
         display: inline-flex;
         background: url('../img/icons/phone.png') no-repeat;
         background-size: contain;

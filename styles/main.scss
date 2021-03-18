@@ -39,7 +39,7 @@ html{
         font-size: $baseFontSize - 1px;
     }
     @include phones {
-        font-size: $baseFontSize - 2px;
+        font-size: rem(40px);
     }
 }
 
@@ -50,23 +50,9 @@ body{
     line-height: rem(19px);  
     color: $gray;
 }
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: $black;
-}
 
-h1,h2,h3,h4,h5,h6, p{
-    padding: 0;
-    margin: 0;
-}
-
-img{
-    width: 100%;
+.wrapper{
+    overflow: hidden;
 }
 
 .container{
@@ -86,6 +72,28 @@ img{
     }
 }
 
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -98,6 +106,7 @@ img{
 //components
 
 @import 'components/section';
+@import 'components/social';
 @import 'components/top-line';
 @import 'components/top-block';
 @import 'components/header';
@@ -115,6 +124,7 @@ img{
 @import 'components/form';
 @import 'components/radio';
 @import 'components/hamburger';
+@import 'components/footer';
 
 //components
 

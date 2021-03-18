@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: $light-gray;
-    gap: rem(40px);
+    gap: rem(32px);
     padding: rem(42px);
     position: relative;
     z-index: -2;
@@ -43,8 +43,7 @@
     line-height: rem(28px);
     color:$black;
 }
-.review__left-column{
-    width: 30%;
+.review__column{
     img{
         width: rem(253px);
         height: rem(264px);
@@ -55,19 +54,13 @@
     }
 }
 
-.review__right-column{
-    flex: 1;
-    .review__text{
-        margin-bottom: rem(38px);
-    }
-    .review__username{
-        font-family: Play;
-        font-style: normal;
-        font-weight: bold;
-        font-size: rem(18px);
-        line-height: rem(21px);
-        color: $black;
-    }
+.review__username{
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: $black;
 }
 
 .usernames{
@@ -85,7 +78,6 @@
         border-radius: 50%;
         width: rem(80px);
         height: rem(80px);
-        border: rem(4px) solid white;
         overflow: hidden;
         &:hover{
             border: rem(4px) solid $red;

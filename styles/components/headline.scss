@@ -6,12 +6,6 @@
     color: $black;
     text-transform: uppercase;
     margin-bottom: rem(18px);
-    @include tablets{
-        white-space: nowrap;
-    }
-    @include phones{
-        white-space: normal;
-    }
     &--white{
         color: white;
         text-align: center;
