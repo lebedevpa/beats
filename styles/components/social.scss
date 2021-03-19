@@ -1,15 +1,14 @@
+.social{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap: 10px;
+   @include phones{
+       justify-content: center;
+   }
+}
+
 .social__item{
-    display: inline-block;
     width: 30px;
     height: 30px;
-}
-
-.social__link{
-    width: 100%;
-}
-
-@each $social__link in (vk, fb, in, tel){
-    .social__link_#{$social__link}{
-        background: url('../img/icons/#{$social__link}.png') center center / contain no-repeat;
-    }
 }

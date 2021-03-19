@@ -3,12 +3,20 @@
     background: white;
 }
 .footer{
-    width: $containerWidth;
+    max-width: $containerWidth;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background: white;
+    
+    @include tablets{
+        padding: 0 rem(30px);
+    }
+    @include phones{
+        flex-direction: column;
+    }
 }
 .footer__address{
     font-style: normal;
@@ -16,6 +24,12 @@
     font-size: rem(21px);
     line-height: rem(24px);
     color:#000;
+    @include telephone{
+        font-size: rem(18px);
+        line-height: rem(21px);
+        text-align: center;
+        margin-bottom: 12px;
+    }
 }
 .footer__telephone{
     margin-left: rem(18px);
@@ -24,16 +38,19 @@
         color: $red;
         font-size: rem(18px);
         line-height: rem(21px);
-    }
-    &:before{
-        @include tablets{
-            background: url('../img/icons/phone--red.png') no-repeat;
+        &:before{
+            @include tablets{
+                background: url('../img/icons/phone--red.png') no-repeat;
+            }
+            
         }
-        
+    }
+    
+    @include phones{
+        text-align: center;
     }
 }
 
 .footer__row{
-    width: 50%;
     padding: rem(30px) 0;
 }
