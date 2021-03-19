@@ -1,11 +1,15 @@
-.social{
+.social__item{
     display: inline-block;
     width: 30px;
     height: 30px;
 }
 
-@each $social in (vk, fb, in, tel){
-    .social_#{$social}{
-        background: url('../img/icons/#{$social}.png') center center no-repeat;
+.social__link{
+    width: 100%;
+}
+
+@each $social__link in (vk, fb, in, tel){
+    .social__link_#{$social__link}{
+        background: url('../img/icons/#{$social__link}.png') center center / contain no-repeat;
     }
 }
