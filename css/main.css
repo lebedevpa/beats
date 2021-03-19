@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap");
 html {
   font-size: 18px;
+  min-width: 320px;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -124,6 +125,28 @@ img {
 .section--contacts {
   background: url("../img/content/map.png") center center/cover no-repeat;
   align-items: flex-end;
+}
+
+.social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.social_vk {
+  background: url("../img/icons/vk.png") center center no-repeat;
+}
+
+.social_fb {
+  background: url("../img/icons/fb.png") center center no-repeat;
+}
+
+.social_in {
+  background: url("../img/icons/in.png") center center no-repeat;
+}
+
+.social_tel {
+  background: url("../img/icons/tel.png") center center no-repeat;
 }
 
 .top-block {
@@ -769,6 +792,7 @@ img {
   font-weight: normal;
   font-size: 1.1666666667rem;
   line-height: 1.3333333333rem;
+  color: #000;
 }
 
 .footer__telephone {
@@ -785,13 +809,6 @@ img {
   .footer__telephone:before {
     background: url("../img/icons/phone--red.png") no-repeat;
   }
-}
-
-.social__item {
-  background-color: #000;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
 }
 
 .footer__row {

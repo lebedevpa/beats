@@ -41,6 +41,7 @@ html{
     @include phones {
         font-size: 2vmax;
     }
+    min-width: 320px;
 }
 
 body{
