@@ -1,8 +1,10 @@
 .hero{
     display: flex;
-    flex: 2;
     flex-direction: row;
     position: relative;
+    @include tablets{
+        flex: 2;
+    }
 }
 .hero__column{
     width: 50%;

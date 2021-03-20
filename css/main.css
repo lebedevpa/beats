@@ -216,9 +216,13 @@ img {
 
 .hero {
   display: flex;
-  flex: 2;
   flex-direction: row;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex: 2;
+  }
 }
 
 .hero__column {
