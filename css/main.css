@@ -216,6 +216,7 @@ img {
 
 .hero {
   display: flex;
+  flex: 2;
   flex-direction: row;
   position: relative;
 }
@@ -464,9 +465,11 @@ img {
 
 .features__item-title {
   color: #292929;
+  min-width: 15.3333333333rem;
   font-style: normal;
   font-weight: bold;
   font-size: 1.3333333333rem;
+  line-height: 1.5555555556rem;
   margin-bottom: 0.3888888889rem;
 }
 
@@ -475,7 +478,7 @@ img {
   font-weight: normal;
   font-size: 0.8888888889rem;
   line-height: 1.0555555556rem;
-  max-width: 13.7222222222rem;
+  min-width: 13.7222222222rem;
   margin: 0 auto;
 }
 
@@ -540,6 +543,10 @@ img {
   font-size: 1.3333333333rem;
   line-height: 1.5555555556rem;
   color: #292929;
+}
+
+.review__text {
+  padding: 12px 0 12px 0;
 }
 
 .review__column img {
@@ -798,24 +805,48 @@ img {
   line-height: 1.3333333333rem;
   color: #000;
 }
-
-.footer__telephone {
-  margin-left: 1rem;
-}
 @media screen and (max-width: 768px) {
-  .footer__telephone {
-    color: #E01F3D;
+  .footer__address {
     font-size: 1rem;
     line-height: 1.1666666667rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer__telephone:before {
-    background: url("../img/icons/phone--red.png") no-repeat;
+    text-align: center;
+    margin-bottom: 12px;
   }
 }
 
 .footer__row {
   padding: 1.6666666667rem 0;
+}
+
+.footer__telephone {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .footer__telephone {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__telephone .telephone__link {
+    color: #E01F3D;
+    font-size: 1rem;
+    line-height: 1.1666666667rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .footer__telephone .telephone__link:before {
+    background: url("../img/icons/phone--red.png") center center/contain no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__telephone .telephone__link {
+    color: #292929;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 768px) {
+  .footer__telephone .telephone__link:before {
+    background: url("../img/icons/phone.png") center center/contain no-repeat;
+  }
 }
 /*# sourceMappingURL=main.css.map */
