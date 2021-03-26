@@ -1,0 +1,57 @@
+.shop{
+    display: flex;
+    flex-direction: row;
+
+    &__picture{
+    width: rem(452px);
+    height: rem(452px);
+    background: url('../img/content/ellipse6.png')top -10% center / contain no-repeat;
+    }
+
+    &__column{
+        width: 50%;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    &__title{
+        max-width: rem(419px);
+        text-transform: uppercase;
+        color: $black;
+        font-size: rem(36px);
+        line-height: rem(42px);
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    &__price{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 60px;
+        color: #151515;
+    }
+}
+
+.description{
+    width: 50%;   
+}
+
+.description__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color:$gray;
+} 
+
+.decsription__text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
