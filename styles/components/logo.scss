@@ -3,4 +3,7 @@
     height: rem(40px);
     margin-right: rem(38px);
     flex-shrink: 0;
+    &_img{
+        fill:$red;
+    }
 }

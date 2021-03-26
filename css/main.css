@@ -142,6 +142,11 @@ img {
 .social__item {
   width: 30px;
   height: 30px;
+  fill: #B3B3B3;
+}
+.social__item:hover {
+  fill: #292929;
+  transition: 0.5s;
 }
 
 .top-block {
@@ -172,6 +177,9 @@ img {
   height: 2.2222222222rem;
   margin-right: 2.1111111111rem;
   flex-shrink: 0;
+}
+.logo_img {
+  fill: #E01F3D;
 }
 
 .nav-menu {
@@ -291,6 +299,15 @@ img {
   justify-content: center;
   align-items: center;
 }
+.telephone__icon {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (max-width: 768px) {
+  .telephone__icon {
+    display: none;
+  }
+}
 
 .telephone__link {
   font-weight: normal;
@@ -298,19 +315,6 @@ img {
   line-height: 1rem;
   white-space: nowrap;
   position: relative;
-}
-.telephone__link:before {
-  content: "";
-  position: absolute;
-  top: 0.1111111111rem;
-  left: -1rem;
-  display: inline-flex;
-  background: url("../img/icons/phone.png") no-repeat;
-  background-size: contain;
-  width: 0.7777777778rem;
-  height: 0.7777777778rem;
-  margin-right: 0.3333333333rem;
-  flex-shrink: 0;
 }
 
 .fixed-menu {
@@ -724,7 +728,7 @@ img {
   border-radius: 0;
 }
 .radio__checkbox .radio__visible::before {
-  background: url("../../img/icons/checkmark.png") center/contain no-repeat;
+  background: url("../../img/svg/checkmark.svg") center/contain no-repeat;
   border-radius: 0;
   color: #E01F3D;
 }
@@ -818,16 +822,21 @@ img {
   }
 }
 
-.footer__row {
-  padding: 1.6666666667rem 0;
-}
-
-.footer__telephone {
-  margin-left: 1rem;
-}
 @media screen and (max-width: 480px) {
   .footer__telephone {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__telephone .telephone__icon {
+    display: inline-flex;
+    fill: #E01F3D;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__telephone .telephone__icon {
+    fill: #292929;
   }
 }
 
@@ -838,19 +847,13 @@ img {
     line-height: 1.1666666667rem;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  .footer__telephone .telephone__link:before {
-    background: url("../img/icons/phone--red.png") center center/contain no-repeat;
-  }
-}
 @media screen and (max-width: 480px) {
   .footer__telephone .telephone__link {
     color: #292929;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 768px) {
-  .footer__telephone .telephone__link:before {
-    background: url("../img/icons/phone.png") center center/contain no-repeat;
-  }
+
+.footer__row {
+  padding: 1.6666666667rem 0;
 }
 /*# sourceMappingURL=main.css.map */

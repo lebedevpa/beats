@@ -2,6 +2,15 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+
+    &__icon{
+        width: 15px;
+        height: 15px;
+
+        @include tablets{
+        display: none;
+        }
+    }
 }
 .telephone__link{
     font-weight: normal;
@@ -9,18 +18,7 @@
     line-height: rem(18px);
     white-space: nowrap;
     position: relative;
-
-    &:before{
-        content: "";
-        position: absolute;
-        top: rem(2px);
-        left:rem(-18px);
-        display: inline-flex;
-        background: url('../img/icons/phone.png') no-repeat;
-        background-size: contain;
-        width: rem(14px);
-        height: rem(14px);
-        margin-right: rem(6px);
-        flex-shrink: 0;
-    }
 }
+
+
+
