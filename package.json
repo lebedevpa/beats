@@ -1,0 +1,32 @@
+{
+  "name": "beats",
+  "version": "1.0.0",
+  "description": "LoftSchool module2 Web-Development for begginers",
+  "main": "index.html",
+  "scripts": {
+    "test": "copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebedevpa/beats.git"
+  },
+  "keywords": [
+    "beats",
+    "javascript",
+    "html",
+    "scss"
+  ],
+  "author": "Pavel Lebedev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lebedevpa/beats/issues"
+  },
+  "homepage": "https://github.com/lebedevpa/beats#readme",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "webpack": "^5.28.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
