@@ -3,15 +3,59 @@
     flex-direction: row;
 
     &__picture{
-    width: rem(452px);
-    height: rem(452px);
-    background: url('../img/content/ellipse6.png')top -10% center / contain no-repeat;
+        margin-right: 60px;
+        position: relative;
+        width: rem(452px);
+        height: rem(452px);
+        background: url('../img/content/Ellipse6.png')top -10% center / contain no-repeat;
+        
+        &::after{
+            position: absolute;
+            left:-100px;
+            top: 50%;
+            content: "";
+            display: block;
+            width: 27px;
+            height: 27px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            transform: rotate(135deg);
+        }
+
+    }
+
+    &__menu{
+
+        display: block;
+        width: 91px;
+        height: 91px;
+        background-color: #9A9A9A;
+        border-radius: 4px;
+        margin-bottom: rem(25px);
+        
+
     }
 
     &__column{
         width: 50%;
         flex-direction: column;
         align-content: space-between;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            right:-100px;
+            top: 50%;
+            content: "";
+            display: block;
+            width: 27px;
+            height: 27px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            transform: rotate(-45deg);
+        }
+        
+
     }
 
     &__title{
@@ -20,13 +64,19 @@
         color: $black;
         font-size: rem(36px);
         line-height: rem(42px);
+        margin-bottom: rem(24px);
     }
 
     &__description{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin-bottom: rem(27px);
     }
+    &__row{
+        margin: rem(27px) 0 rem(27px) 0;
+    }
+
     &__price{
         font-style: normal;
         font-weight: normal;

@@ -142,9 +142,12 @@ img {
 .social__item {
   width: 30px;
   height: 30px;
+}
+
+.social__link {
   fill: #B3B3B3;
 }
-.social__item:hover {
+.social__link:hover {
   fill: #292929;
   transition: 0.5s;
 }
@@ -154,14 +157,49 @@ img {
   flex-direction: row;
 }
 .shop__picture {
+  margin-right: 60px;
+  position: relative;
   width: 25.1111111111rem;
   height: 25.1111111111rem;
-  background: url("../img/content/ellipse6.png") top -10% center/contain no-repeat;
+  background: url("../img/content/Ellipse6.png") top -10% center/contain no-repeat;
+}
+.shop__picture::after {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(135deg);
+}
+.shop__menu {
+  display: block;
+  width: 91px;
+  height: 91px;
+  background-color: #9A9A9A;
+  border-radius: 4px;
+  margin-bottom: 1.3888888889rem;
 }
 .shop__column {
   width: 50%;
   flex-direction: column;
   align-content: space-between;
+  position: relative;
+}
+.shop__column::before {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(-45deg);
 }
 .shop__title {
   max-width: 23.2777777778rem;
@@ -169,11 +207,16 @@ img {
   color: #292929;
   font-size: 2rem;
   line-height: 2.3333333333rem;
+  margin-bottom: 1.3333333333rem;
 }
 .shop__description {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+.shop__row {
+  margin: 1.5rem 0 1.5rem 0;
 }
 .shop__price {
   font-style: normal;
