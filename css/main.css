@@ -353,6 +353,32 @@ img {
   white-space: nowrap;
 }
 
+.nav-adapt {
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #313131;
+  position: absolute;
+  z-index: 1000;
+}
+.nav-adapt .nav-menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.nav-adapt .nav-menu__list {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nav-adapt .nav-menu__link {
+  color: white;
+  font-size: 36px;
+  line-height: 72px;
+}
+
 .greeting__container {
   display: flex;
   flex-direction: column;

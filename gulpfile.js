@@ -1,4 +1,4 @@
-const { src, dest, parallel , series , watch ,task } = require('gulp');
+const { src, dest, parallel , series , watch , task } = require('gulp');
 const browserSync = require('browser-sync').create();
 
 function browsersync() {
