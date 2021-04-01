@@ -1,15 +1,10 @@
-const { src, dest, task } = require( 'gulp' )
-var rm = require( 'gulp-rm' )
- 
-task( 'clean', () => {
-  return src( '/dist/**/*', { read: false })
+const { src, dest, parallel , series , watch ,task } = require('gulp');
+const browserSync = require('browser-sync').create();
 
-    .pipe( rm() )
-});
-
-function copy () {
-    return src("/styles/*.scss").pipe(dest("dist"));
+function browsersync() {
+  browserSync.init({
+    server: {baseDir: '/'}
+  })
 }
 
-exports.copy = copy;
-
+exports.browsersync = browsersync;
