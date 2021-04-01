@@ -26,3 +26,18 @@
         transition: 0.7s;
     }
 }
+
+.shop__btn{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    &_right{
+        transform: rotate(-45deg);
+    }
+    &_left{
+        transform: rotate(135deg);
+    }
+}

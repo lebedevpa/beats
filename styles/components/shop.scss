@@ -1,6 +1,29 @@
 .shop{
     display: flex;
     flex-direction: row;
+    position: relative;
+    @include tablets{
+        flex-direction: column;
+        flex: 2;
+    }
+
+    &__controls{
+        display: block;
+    }
+
+    &__btn{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 0);
+        z-index: 10;
+        &_right{
+            right: rem(-100px);
+        }
+        &_left{
+            left:rem(-100px);
+        }
+    }
+
 
     &__picture{
         margin-right: 60px;
@@ -8,20 +31,9 @@
         width: rem(452px);
         height: rem(452px);
         background: url('../img/content/Ellipse6.png')top -10% center / contain no-repeat;
-        
-        &::after{
-            position: absolute;
-            left:-100px;
-            top: 50%;
-            content: "";
-            display: block;
-            width: 27px;
-            height: 27px;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
-            transform: rotate(135deg);
+        @include tablets{
+            display: none;
         }
-
     }
 
     &__menu{
@@ -33,6 +45,9 @@
         border-radius: 4px;
         margin-bottom: rem(25px);
         
+        @include tablets{
+            display: none;
+        }
 
     }
 
@@ -40,22 +55,25 @@
         width: 50%;
         flex-direction: column;
         align-content: space-between;
-        position: relative;
-
-        &::before{
-            position: absolute;
-            right:-100px;
-            top: 50%;
-            content: "";
-            display: block;
-            width: 27px;
-            height: 27px;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
-            transform: rotate(-45deg);
+        @include tablets{
+            width: 100%;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: rem(50px);
+            &::before{
+                content: '';
+                width: rem(323px);
+                height: rem(323px);
+                background: url('../img/content/Ellipse6.png')center center / contain no-repeat;
+                transform: scale(0.8);
+    
+            }
         }
-        
-
     }
 
     &__title{
@@ -65,6 +83,10 @@
         font-size: rem(36px);
         line-height: rem(42px);
         margin-bottom: rem(24px);
+        @include tablets{
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     &__description{
@@ -83,6 +105,7 @@
         font-size: 36px;
         line-height: 60px;
         color: #151515;
+        margin-right: rem(13px);
     }
 }
 
