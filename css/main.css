@@ -103,12 +103,6 @@ img {
 .section--gray {
   background-color: #f5f5f5;
 }
-@media screen and (max-width: 768px) {
-  .section--shop {
-    padding-top: 8.3333333333rem;
-    padding-bottom: 5.5555555556rem;
-  }
-}
 .section--light-gray {
   background-color: #F8FAF9;
 }
@@ -166,7 +160,6 @@ img {
 @media screen and (max-width: 768px) {
   .shop {
     flex-direction: column;
-    flex: 2;
   }
 }
 .shop__controls {
@@ -189,15 +182,23 @@ img {
   position: relative;
   width: 25.1111111111rem;
   height: 25.1111111111rem;
-  background: url("../img/content/Ellipse6.png") top -10% center/contain no-repeat;
 }
 @media screen and (max-width: 768px) {
   .shop__picture {
-    display: none;
+    width: 17rem;
+    height: 17rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .shop__picture {
+    width: 64%;
+    height: auto;
   }
 }
 .shop__menu {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 91px;
   height: 91px;
   background-color: #9A9A9A;
@@ -209,6 +210,10 @@ img {
     display: none;
   }
 }
+.shop__icon--gear {
+  width: 50%;
+  fill: white;
+}
 .shop__column {
   width: 50%;
   flex-direction: column;
@@ -218,20 +223,12 @@ img {
   .shop__column {
     width: 100%;
     text-align: center;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 2.7777777778rem;
-  }
-  .shop__column::before {
-    content: "";
-    width: 17.9444444444rem;
-    height: 17.9444444444rem;
-    background: url("../img/content/Ellipse6.png") center center/contain no-repeat;
-    transform: scale(0.8);
   }
 }
 .shop__title {
@@ -254,8 +251,17 @@ img {
   justify-content: flex-start;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .shop__description {
+    width: 100%;
+  }
+}
 .shop__row {
   margin: 1.5rem 0 1.5rem 0;
+}
+.shop__purchase {
+  display: flex;
+  align-items: center;
 }
 .shop__price {
   font-style: normal;
@@ -589,9 +595,11 @@ img {
 }
 .features__item:first-child {
   margin-left: 0;
+  padding-left: 0;
 }
 .features__item:last-child {
   margin-right: 0;
+  padding-right: 0;
 }
 .features__item:last-child::before {
   display: none;
@@ -599,6 +607,7 @@ img {
 @media screen and (max-width: 768px) {
   .features__item {
     min-width: auto;
+    padding: 0 1%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -636,7 +645,6 @@ img {
 
 .features__item-title {
   color: #292929;
-  min-width: 15.3333333333rem;
   font-style: normal;
   font-weight: bold;
   font-size: 1.3333333333rem;
@@ -649,7 +657,6 @@ img {
   font-weight: normal;
   font-size: 0.8888888889rem;
   line-height: 1.0555555556rem;
-  min-width: 13.7222222222rem;
   margin: 0 auto;
 }
 
