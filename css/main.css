@@ -292,6 +292,74 @@ img {
   color: #000;
 }
 
+.video__title {
+  text-align: center;
+}
+
+iframe {
+  margin: 0 auto;
+}
+
+.team__title {
+  text-align: center;
+}
+
+.slider__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider__item {
+  text-align: center;
+  margin-right: 20px;
+  width: 12.2222222222rem;
+  overflow: hidden;
+}
+.slider__item:last-child {
+  margin-right: 0;
+}
+
+.slider__pic {
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider__name {
+  display: block;
+  width: 100%;
+  color: #292929;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.1666666667rem;
+  position: relative;
+  margin-bottom: 0.6111111111rem;
+}
+.slider__name::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0.5555555556rem;
+  right: 0.5555555556rem;
+  width: 9px;
+  height: 9px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid #E01F3D;
+}
+
+.slider__occupation {
+  color: #292929;
+}
+
+.slider__competence {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666;
+}
+
 .top-block {
   max-width: 32.7777777778rem;
   margin: 0 auto;

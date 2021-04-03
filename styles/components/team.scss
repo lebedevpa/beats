@@ -1,0 +1,56 @@
+.team__title{
+    text-align: center;
+}
+
+.slider__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider__item{
+    text-align: center;
+    margin-right: 20px;
+    width: rem(220px);
+    overflow: hidden;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.slider__pic{
+    margin-bottom: rem(25px);
+}
+
+.slider__name{
+    display: block;
+    width: 100%;
+    color: #292929;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    position: relative;
+    margin-bottom: rem(11px);
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        top: rem(10px);
+        right: rem(10px);
+        width: 9px;
+        height: 9px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 6px solid $red;
+    }
+}
+.slider__occupation{
+    color: #292929;
+}
+.slider__competence{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666;
+}
