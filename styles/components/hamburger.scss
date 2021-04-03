@@ -1,3 +1,13 @@
+
+.hamburger-container--active{
+    display: block;
+    z-index: 10000;
+    transition: 0.7s;
+    .hamburger__plank{
+        background-color: white; 
+    }
+}
+
 .hamburger{
     width: 24px;
     height: 20px;
