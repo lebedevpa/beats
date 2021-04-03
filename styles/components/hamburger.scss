@@ -3,9 +3,22 @@
     display: block;
     z-index: 10000;
     transition: 0.7s;
+
     .hamburger__plank{
         background-color: white; 
     }
+    .hamburger__plank--open.plank-1{
+        transform: translateY(12px) rotate(135deg);
+    }
+    
+    .hamburger__plank--open.plank-2{
+        transform: scale(0);
+    }
+    
+    .hamburger__plank--open.plank-3{
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
 }
 
 .hamburger{
@@ -17,10 +30,15 @@
     @include tablets{
         display: inline-flex;
     }
+
 }
+
 .hamburger__plank{
     display: block;
     background-color: $black;
     height: 4px;
     border-radius: 10px;
+    transition: 0.5s;
 }
+
+// animation idea from https://codepen.io/Bilal1909/pen/KKdrmRP

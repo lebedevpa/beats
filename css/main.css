@@ -957,6 +957,15 @@ img {
 .hamburger-container--active .hamburger__plank {
   background-color: white;
 }
+.hamburger-container--active .hamburger__plank--open.plank-1 {
+  transform: translateY(12px) rotate(135deg);
+}
+.hamburger-container--active .hamburger__plank--open.plank-2 {
+  transform: scale(0);
+}
+.hamburger-container--active .hamburger__plank--open.plank-3 {
+  transform: translateY(-12px) rotate(-135deg);
+}
 
 .hamburger {
   width: 24px;
@@ -976,6 +985,7 @@ img {
   background-color: #292929;
   height: 4px;
   border-radius: 10px;
+  transition: 0.5s;
 }
 
 .footer--container {
