@@ -73,7 +73,6 @@ img {
   height: 100vh;
   width: 100%;
   display: flex;
-  border: 0.0555555556rem solid #E01F3D;
   min-height: 36.1111111111rem;
 }
 .section--greeting {
