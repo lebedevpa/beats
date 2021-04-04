@@ -1057,9 +1057,6 @@ iframe {
   z-index: 10000;
   transition: 0.7s;
 }
-.hamburger-container--active .hamburger__plank {
-  background-color: white;
-}
 
 .hamburger {
   width: 24px;
@@ -1073,13 +1070,25 @@ iframe {
     display: inline-flex;
   }
 }
+.hamburger--active .hamburger__plank {
+  background-color: white;
+  transform: scale(0);
+  transition: 0s;
+}
+.hamburger--active .hamburger__plank:first-child {
+  transform: translateY(4px) rotate(135deg);
+  transition: 0.7s;
+}
+.hamburger--active .hamburger__plank:last-child {
+  transform: translateY(-12px) rotate(-135deg);
+  transition: 0.7s;
+}
 
 .hamburger__plank {
   display: block;
   background-color: #292929;
   height: 4px;
   border-radius: 10px;
-  transition: 0.5s;
 }
 
 .footer--container {

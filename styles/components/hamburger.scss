@@ -3,12 +3,6 @@
     display: block;
     z-index: 10000;
     transition: 0.7s;
-
-    .hamburger__plank{
-        background-color: white; 
-    }
-   
-
 }
 
 .hamburger{
@@ -20,6 +14,23 @@
     @include tablets{
         display: inline-flex;
     }
+    &--active{
+        
+        .hamburger__plank{
+            background-color: white; 
+            transform: scale(0);
+            transition: 0s;
+        &:first-child{
+                transform: translateY(4px) rotate(135deg);
+                transition: 0.7s;
+            }
+        &:last-child{
+                transform: translateY(-12px) rotate(-135deg);
+                transition: 0.7s;
+            }
+    
+        }
+    }
 
 }
 
@@ -28,7 +39,6 @@
     background-color: $black;
     height: 4px;
     border-radius: 10px;
-    transition: 0.5s;
 }
 
 // animation idea from https://codepen.io/Bilal1909/pen/KKdrmRP
