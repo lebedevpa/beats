@@ -2,10 +2,8 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    min-height: rem(650px);
     border: rem(1px) solid $red;
-    
+    min-height: rem(650px);
     &--greeting{
         padding-bottom: rem(25px);
         position: relative;

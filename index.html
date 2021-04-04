@@ -85,9 +85,9 @@
                         </div>
                         <div class="hamburger-container" id="toggle">
                             <a href="#" class="hamburger" id="hamburger">
-                                <span class="hamburger__plank plank-1" id="plank"></span>
-                                <span class="hamburger__plank plank-2" id="plank"></span>
-                                <span class="hamburger__plank plank-3" id="plank"></span>
+                                <span class="hamburger__plank" ></span>
+                                <span class="hamburger__plank" ></span>
+                                <span class="hamburger__plank" ></span>
                             </a>
                         </div>
 
@@ -264,9 +264,13 @@
 
         <section class="section section--team section--white">
 
-            <div class="container">
+            <div class="team__container container">
+                <div class="team__title">
 
-                <h2 class="team__title headline">Команда</h2>
+                    <h2 class="headline">Команда</h2>
+
+                </div>
+                
 
                 <div class="slider">
 
@@ -275,7 +279,7 @@
                         <li class="slider__item">
 
                             <div class="slider__pic">
-                                <img class="slider-img" src="img/avatar/Rectangle 4.png" alt="">
+                                <img class="slider-img" src="img/avatar/Rectangle 4.png" alt="Boris">
                             </div>
                             <span class="slider__name">Борис Федорович</span>
                             <div class="slider__description">
@@ -290,11 +294,11 @@
                         <li class="slider__item">
 
                             <div class="slider__pic">
-                                <img class="slider-img" src="img/avatar/anna.png" alt="">
+                                <img class="slider-img" src="img/avatar/anna.png" alt="Alla">
                             </div>
-                            
+                            <span class="slider__name">Алла Иванова</span>
                             <div class="slider__description">
-                                <span class="slider__name">Алла Иванова</span>
+                                
                                 <span class="slider__occupation">Специалист по упаковке</span>
                                 <p class="slider__competence">Автор запоминающегося стиля 
                                     наших батончиков.
@@ -307,10 +311,11 @@
                         <li class="slider__item">
 
                             <div class="slider__pic">
-                                <img class="slider-img" src="img/avatar/boris.png" alt="">
+                                <img class="slider-img" src="img/avatar/boris.png" alt="Kirill">
                             </div>
+                            <span class="slider__name">Кирилл Матросов</span>
                             <div class="slider__description">
-                                <span class="slider__name">Кирилл Матросов</span>
+                                
                                 <span class="slider__occupation">Оператор</span>
                                 <p class="slider__competence">Разработал дизан
                                     наушников beats solo 3.
@@ -321,12 +326,12 @@
 
                         <li class="slider__item">
 
-                            <div class="slider__pic">
-                                <img class="slider-img" src="img/avatar/mila.png" alt="">
+                            <div class="slider__pic slider__pic--active">
+                                <img class="slider-img" src="img/avatar/mila.png" alt="Mila">
                             </div>
-                            
-                            <div class="slider__description">
-                                <span class="slider__name">Мила Рыжкова</span>
+                            <span class="slider__name">Мила Рыжкова</span>
+                            <div class="slider__description slider__description--active">
+                                
                                 <span class="slider__occupation">PR, маркетинг
                                 </span>
                                 <p class="slider__competence">По всем вопросам сотрудничества 

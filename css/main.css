@@ -73,9 +73,8 @@ img {
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
-  min-height: 36.1111111111rem;
   border: 0.0555555556rem solid #E01F3D;
+  min-height: 36.1111111111rem;
 }
 .section--greeting {
   padding-bottom: 1.3888888889rem;
@@ -300,6 +299,10 @@ iframe {
   margin: 0 auto;
 }
 
+.team__container {
+  justify-content: space-evenly;
+}
+
 .team__title {
   text-align: center;
 }
@@ -308,6 +311,11 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .slider__list {
+    flex-direction: column;
+  }
 }
 
 .slider__item {
@@ -319,9 +327,29 @@ iframe {
 .slider__item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .slider__item:last-child {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__item {
+    margin: 0 auto;
+  }
+}
 
 .slider__pic {
   margin-bottom: 1.3888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__pic {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__pic--active {
+    display: block;
+  }
 }
 
 .slider__name {
@@ -346,6 +374,13 @@ iframe {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 6px solid #E01F3D;
+}
+
+.slider__description {
+  display: none;
+}
+.slider__description--active {
+  display: block;
 }
 
 .slider__occupation {
@@ -834,6 +869,7 @@ iframe {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
   overflow: hidden;
+  border: 0.2222222222rem solid transparent;
 }
 .usernames .username:hover {
   border: 0.2222222222rem solid #E01F3D;
@@ -1024,15 +1060,6 @@ iframe {
 }
 .hamburger-container--active .hamburger__plank {
   background-color: white;
-}
-.hamburger-container--active .hamburger__plank--open.plank-1 {
-  transform: translateY(12px) rotate(135deg);
-}
-.hamburger-container--active .hamburger__plank--open.plank-2 {
-  transform: scale(0);
-}
-.hamburger-container--active .hamburger__plank--open.plank-3 {
-  transform: translateY(-12px) rotate(-135deg);
 }
 
 .hamburger {

@@ -84,6 +84,7 @@
         width: rem(80px);
         height: rem(80px);
         overflow: hidden;
+        border: rem(4px) solid transparent;
         &:hover{
             border: rem(4px) solid $red;
             transition: 0.7s;
