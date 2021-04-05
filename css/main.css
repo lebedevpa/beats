@@ -375,10 +375,10 @@ iframe {
   border-bottom: 6px solid #E01F3D;
 }
 
-.slider__description {
+.slider__description--wrap {
   display: none;
 }
-.slider__description--active {
+.slider__description--wrap--active {
   display: block;
 }
 

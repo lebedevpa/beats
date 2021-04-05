@@ -10,9 +10,62 @@ let toggleMenu = function() {
     hamburger.classList.toggle('hamburger--active')
     menu.classList.toggle('burger-menu--open');
     body.classList.toggle('body-active-menu');
-
 }
 
 button.addEventListener('click', toggleMenu);   
 
-// hamburger-menu toggle on/off
+//validateForm
+
+
+
+//accordeon
+
+(function(){
+    
+    let button = document.querySelectorAll('.slider__name');
+    let desc_wrap = document.querySelectorAll('.slider__description--wrap');
+
+    let toggleAccordeon = function () {
+        button.classList.toggle('slider__name--active');
+        desc_wrap.classList.toggle('slider__description--wrap--active');
+
+    }
+
+    button.addEventListener('click', toggleAccordeon);   
+
+})();
+
+
+// (function(){
+//     let button = document.querySelectorAll('.slider__name');
+    
+//     let desc = document.querySelectorAll('slider__description')
+//     let desc_wrap = document.querySelectorAll('.slider__description--wrap')
+
+//     function hideAccordeon(){
+
+//     }
+
+//     function showAccordeon(i){
+//         let display = get(desc[i]).display
+//         desc_wrap[i].style.display = `${display}`
+//         desc_wrap[i].classList.add('slider__description--wrap--active')
+//     }
+
+//     for (let i=0; i<button.length; i++) {
+//         let current = button[i];
+
+//         current.addEventListener('click', () => {
+//             showAccordeon(i)
+//         })
+//     }
+// })();
+
+
+
+
+//owl-carousel
+
+
+
+
