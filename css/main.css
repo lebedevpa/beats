@@ -791,7 +791,7 @@ iframe {
 }
 
 .review__item {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -817,6 +817,10 @@ iframe {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.review__item--active {
+  display: flex;
 }
 
 .review__title {
@@ -873,6 +877,10 @@ iframe {
 .usernames .username:hover {
   border: 0.2222222222rem solid #E01F3D;
   transition: 0.7s;
+}
+
+.username--active {
+  border: 0.2222222222rem solid #E01F3D;
 }
 
 .btn {

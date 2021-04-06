@@ -1,5 +1,4 @@
 // hamburger-menu toggle on/off
-
 let button = document.querySelector('#toggle');
 let menu = document.querySelector('#burger-menu');  
 let hamburger = document.querySelector('#hamburger')
@@ -20,52 +19,27 @@ button.addEventListener('click', toggleMenu);
 
 //accordeon
 
-(function(){
-    
-    let button = document.querySelectorAll('.slider__name');
-    let desc_wrap = document.querySelectorAll('.slider__description--wrap');
-
-    let toggleAccordeon = function () {
-        button.classList.toggle('slider__name--active');
-        desc_wrap.classList.toggle('slider__description--wrap--active');
-
-    }
-
-    button.addEventListener('click', toggleAccordeon);   
-
-})();
-
-
-// (function(){
-//     let button = document.querySelectorAll('.slider__name');
-    
-//     let desc = document.querySelectorAll('slider__description')
-//     let desc_wrap = document.querySelectorAll('.slider__description--wrap')
-
-//     function hideAccordeon(){
-
-//     }
-
-//     function showAccordeon(i){
-//         let display = get(desc[i]).display
-//         desc_wrap[i].style.display = `${display}`
-//         desc_wrap[i].classList.add('slider__description--wrap--active')
-//     }
-
-//     for (let i=0; i<button.length; i++) {
-//         let current = button[i];
-
-//         current.addEventListener('click', () => {
-//             showAccordeon(i)
-//         })
-//     }
-// })();
-
-
-
-
 //owl-carousel
 
 
 
 
+//reviews-slider
+
+const findBlockByAlias = alias => {
+    return $(".review__item").filter((ndx, item) => {
+        return $(item).attr("data-linked-with") == alias
+    });
+}
+
+$(".avatar-round").click((e) => {
+    e.preventDefault();
+
+    const $this = $(e.currentTarget);
+    const target = $this.attr("data-open");
+    const curItem = $this.closest(".usernames__item");
+    const itemToShow = findBlockByAlias(target);
+
+    itemToShow.addClass("review__item--active").siblings().removeClass("review__item--active")
+    curItem.addClass("username--active").siblings().removeClass("username--active");
+})

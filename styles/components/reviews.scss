@@ -5,7 +5,7 @@
 }
 
 .review__item{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     padding: rem(42px);
     position: relative;
     z-index: -2;
-
+    
 
     &:after{
         content: "";
@@ -33,6 +33,12 @@
         flex-direction: column;
         text-align: center;
     }
+}
+
+.review__item--active{
+
+    display: flex;
+
 }
 
 .review__title{
@@ -91,4 +97,8 @@
         }
     }
     
+}
+
+.username--active{
+    border: rem(4px) solid $red;
 }

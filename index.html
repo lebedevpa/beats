@@ -372,9 +372,9 @@
                 </div>
                 <div class="review">
                     <ul class="review__menu">
-                        <li class="review__item">
+                        <li class="review__item" data-linked-with="one">
                             <div class="review__column avatar-sq">
-                                <img src="img/avatar/billie 7.png" alt="billie">
+                                <img src="img/avatar/billie 7.png" alt="Billie">
                             </div>
                             <div class="review__column">
                                 <h3 class="review__title">Отличный звук</h3>
@@ -389,20 +389,50 @@
                                 <p class="review__username">Билли Айлиш</p>
                             </div>
                         </li>
+                        <li class="review__item reviews__item--active" data-linked-with="two">
+                            <div class="review__column avatar-sq">
+                                <img src="img/avatar/maria.png" alt="Alena">
+                            </div>
+                            <div class="review__column">
+                                <h3 class="review__title">Крутой дизайн</h3>
+                                <p class="review__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность
+                                    в
+                                    разы.
+                                    В течение дня сижу за компьютером и
+                                    часто отходить в кафе или на кухню просто
+                                    не могу себе позволить.
+                                    А батончик – он всегда под рукой.
+                                    Это приятно и удобно. </p>
+                                <p class="review__username">Алена Хмельницкая</p>
+                            </div>
+                        </li>
+                        <li class="review__item" data-linked-with="three">
+                            <div class="review__column avatar-sq">
+                                <img src="img/avatar/vadim.png" alt="Vadim">
+                            </div>
+                            <div class="review__column">
+                                <h3 class="review__title">На долго хватает заряда</h3>
+                                <p class="review__text">После тренировок всегда хочется быстро закинуться чем-то белковым,
+                                     потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда 
+                                     выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. </p>
+                                <p class="review__username">Вадим Грачев
+                                </p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="usernames">
                     <ul class="usernames__menu">
-                        <li class="usernames__item username avatar-round">
-                            <a href="#" class="avatar-round"><img src="img/avatar/billie 7.png" alt="billie"
+                        <li class="usernames__item username avatar-round active">
+                            <a href="#" class="avatar-round" data-open="one" ><img src="img/avatar/billie 7.png" alt="billie"
                                     class="username__avatar"></a>
                         </li>
                         <li class="usernames__item username">
-                            <a href="#" class="avatar-round"><img src="img/avatar/vadim.png" alt="vadim"
+                            <a href="#" class="avatar-round" data-open="two"><img src="img/avatar/vadim.png" alt="vadim"
                                     class="username__avatar"></a>
                         </li>
                         <li class="usernames__item username">
-                            <a href="#" class="avatar-round"><img src="img/avatar/maria.png" alt="maria"
+                            <a href="#" class="avatar-round" data-open="three"><img src="img/avatar/maria.png" alt="maria"
                                     class="username__avatar"></a>
                         </li>
                     </ul>
