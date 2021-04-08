@@ -290,6 +290,31 @@ img {
   color: #000;
 }
 
+.gear {
+  position: relative;
+}
+.gear .gear__list {
+  position: absolute;
+  top: 0;
+  left: 92px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.gear .gear__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+.gear .gear__icon {
+  width: 14px;
+}
+
 .video__title {
   text-align: center;
 }
