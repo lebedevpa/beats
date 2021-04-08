@@ -1047,6 +1047,10 @@ iframe {
   }
 }
 
+.input-error {
+  border: 2px solid #E01F3D;
+}
+
 .radio {
   display: flex;
   align-items: center;
@@ -1207,7 +1211,7 @@ iframe {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 309px;
@@ -1215,6 +1219,9 @@ iframe {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
 }
 .modal.fancybox-content {
   padding: 0 !important;
