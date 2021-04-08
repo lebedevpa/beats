@@ -1,19 +1,11 @@
-.modal {
-    display: block;
-    &.error-modal{
-        .modal__content{
-            color:red;
-        }
-    }
-}
-
-&.fancybox-content{
-    padding: 0 !important;
-}
-
-.fancybox-button{
+.modal{
     display: none;
+   &__content{
+    margin-bottom: 15px;
+    color: #000;
+   }
 }
+
 
 .modal__container{
     background: #fff;
@@ -21,9 +13,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.modal__content{
-    margin-bottom: 15px;
-    color: #000;
 }
