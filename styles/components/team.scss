@@ -1,3 +1,21 @@
+
+.slider--version--desktop{
+    display: flex;
+    @include tablets{
+        display: none;
+    }
+    @include phones{
+        display: none;
+    }
+}
+
+.slider--version--mobile{
+    display: none;
+    @include tablets{
+        display: block;
+    }
+}
+
 .team__container{
     justify-content:space-evenly;
 }
@@ -44,7 +62,7 @@
 
 .slider__name{
     display: block;
-    width: 100%;
+    margin: 0 auto;
     color: #292929;
     font-style: normal;
     font-weight: bold;
@@ -52,26 +70,38 @@
     line-height: rem(21px);
     position: relative;
     margin-bottom: rem(11px);
+    border: none;
+    background: none;
     &::after{
         position: absolute;
         content: "";
         display: block;
-        top: rem(10px);
-        right: rem(10px);
+        top: rem(8px);
+        right: rem(-8px);
         width: 9px;
         height: 9px;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-bottom: 6px solid $red;
     }
+
 }
 
-.slider__description--wrap{
-    display: none;
+.slider__description{
+    overflow: hidden;
+    height: 0;
+    transition: 0.7s;
+    position: relative;
     &--active{
-        display: block;
+        height: 100px;
+    }
+
+    &--wrap{
+        position: absolute;
     }
 }
+
+
 
 .slider__occupation{
     

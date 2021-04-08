@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Beats Solo 3</title>
 </head>
 
@@ -209,9 +210,9 @@
                         <a href="#" class="shop__btn shop__btn_left"></a>
                         <a href="#" class="shop__btn shop__btn_right"></a>
                     </div>
-
-                    <div class="shop__slide">
-
+        
+                    <div class="shop__slide ">
+                        
                         <div class="shop__picture">
                             <img src="img/content/Ellipse6.png" class="shop__img" alt="">
                         </div>
@@ -272,7 +273,7 @@
                 </div>
 
 
-                <div class="slider">
+                <div class="slider slider--version--desktop">
 
                     <ul class="slider__list">
 
@@ -281,7 +282,7 @@
                             <div class="slider__pic">
                                 <img class="slider-img" src="img/avatar/Rectangle 4.png" alt="Boris">
                             </div>
-                            <span class="slider__name">Борис Федорович</span>
+                            <button class="slider__name">Борис Федорович</button>
                             
                             <div class="slider__description">
                                 <div class="slider__description--wrap">
@@ -299,7 +300,7 @@
                             <div class="slider__pic">
                                 <img class="slider-img" src="img/avatar/anna.png" alt="Alla">
                             </div>
-                            <a href="#" class="slider__name">Алла Иванова</a>
+                            <button href="#" class="slider__name">Алла Иванова</button>
                             <div class="slider__description">
                                 <div class="slider__description--wrap">
                                     <span class="slider__occupation">Специалист по упаковке</span>
@@ -319,7 +320,7 @@
                             <div class="slider__pic">
                                 <img class="slider-img" src="img/avatar/boris.png" alt="Kirill">
                             </div>
-                            <span class="slider__name">Кирилл Матросов</span>
+                            <button class="slider__name">Кирилл Матросов</button>
                             <div class="slider__description">
                                 <div class="slider__description--wrap">
                                     <span class="slider__occupation">Оператор</span>
@@ -338,9 +339,114 @@
                             <div class="slider__pic slider__pic--active">
                                 <img class="slider-img" src="img/avatar/mila.png" alt="Mila">
                             </div>
-                            <span class="slider__name">Мила Рыжкова</span>
+                            <button class="slider__name">Мила Рыжкова</button>
+                            <div class="slider__description slider__description--active">
+                                <div class="slider__description--wrap">
+                                
+                                    <span class="slider__occupation">PR, маркетинг
+                                    </span>
+                                    <p class="slider__competence">По всем вопросам сотрудничества
+                                        и рекламы писать только Миле.
+    
+                                    </p>
+                                
+                                </div>
+                                
+                            </div>
+
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+                <div class="slider slider--version--mobile">
+
+                    <ul class="slider__list">
+
+                        <li class="slider__item">
+
+                            
+                            <button class="slider__name">Борис Федорович</button>
+                            
+                            
+
                             <div class="slider__description">
-                                <div class="slider__description--wrap slider__description--wrap--active">
+                                <div class="slider__pic">
+                                    <img class="slider-img" src="img/avatar/Rectangle 4.png" alt="Boris">
+                                </div>
+                                <div class="slider__description--wrap">
+                                    <span class="slider__occupation">Главный технолог</span>
+                                    <p class="slider__competence">Отвечает за вкусовые качества
+                                    и калорийность.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="slider__item">
+                            
+                            <button href="#" class="slider__name">Алла Иванова</button>
+                            
+                            
+
+                            
+                            <div class="slider__description">
+                                <div class="slider__pic">
+                                    <img class="slider-img" src="img/avatar/anna.png" alt="Alla">
+                                </div>
+                                <div class="slider__description--wrap">
+                                    <span class="slider__occupation">Специалист по упаковке</span>
+                                    <p class="slider__competence">Автор запоминающегося стиля
+                                        наших батончиков.
+    
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="slider__item">
+
+                            
+                            <button class="slider__name">Кирилл Матросов</button>
+                            
+                           
+
+                           
+                            <div class="slider__description">
+                                <div class="slider__pic">
+                                    <img class="slider-img" src="img/avatar/boris.png" alt="Kirill">
+                                </div>
+                                <div class="slider__description--wrap">
+                                    <span class="slider__occupation">Оператор</span>
+                                    <p class="slider__competence">Разработал дизан
+                                    наушников beats solo 3.
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="slider__item">
+
+                            
+                            <button class="slider__name">Мила Рыжкова</button>
+                            
+                            
+
+                            <div class="slider__description slider__description--active">
+                                <div class="slider__pic slider__pic--active">
+                                    <img class="slider-img" src="img/avatar/mila.png" alt="Mila">
+                                </div>
+                                <div class="slider__description--wrap">
                                 
                                     <span class="slider__occupation">PR, маркетинг
                                     </span>
@@ -389,7 +495,7 @@
                                 <p class="review__username">Билли Айлиш</p>
                             </div>
                         </li>
-                        <li class="review__item reviews__item--active" data-linked-with="two">
+                        <li class="review__item review__item--active" data-linked-with="two">
                             <div class="review__column avatar-sq">
                                 <img src="img/avatar/maria.png" alt="Alena">
                             </div>
@@ -608,8 +714,23 @@
         </ul>
     </nav>
 
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                <p class="modal__message">
+                    Сообщение отправлено
+                </p>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn btn--red">закрыть</a>
+            </div>  
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

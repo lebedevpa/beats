@@ -298,6 +298,29 @@ iframe {
   margin: 0 auto;
 }
 
+.slider--version--desktop {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .slider--version--desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider--version--desktop {
+    display: none;
+  }
+}
+
+.slider--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .slider--version--mobile {
+    display: block;
+  }
+}
+
 .team__container {
   justify-content: space-evenly;
 }
@@ -353,7 +376,7 @@ iframe {
 
 .slider__name {
   display: block;
-  width: 100%;
+  margin: 0 auto;
   color: #292929;
   font-style: normal;
   font-weight: bold;
@@ -361,13 +384,15 @@ iframe {
   line-height: 1.1666666667rem;
   position: relative;
   margin-bottom: 0.6111111111rem;
+  border: none;
+  background: none;
 }
 .slider__name::after {
   position: absolute;
   content: "";
   display: block;
-  top: 0.5555555556rem;
-  right: 0.5555555556rem;
+  top: 0.4444444444rem;
+  right: -0.4444444444rem;
   width: 9px;
   height: 9px;
   border-left: 5px solid transparent;
@@ -375,11 +400,17 @@ iframe {
   border-bottom: 6px solid #E01F3D;
 }
 
-.slider__description--wrap {
-  display: none;
+.slider__description {
+  overflow: hidden;
+  height: 0;
+  transition: 0.7s;
+  position: relative;
 }
-.slider__description--wrap--active {
-  display: block;
+.slider__description--active {
+  height: 100px;
+}
+.slider__description--wrap {
+  position: absolute;
 }
 
 .slider__occupation {
