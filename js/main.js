@@ -72,3 +72,20 @@ $(".avatar-round").click((e) => {
     itemToShow.addClass("review__item--active").siblings().removeClass("review__item--active")
     curItem.addClass("username--active").siblings().removeClass("username--active");
 })
+
+// modal
+
+$('.form').submit(e => {
+    e.preventDefault();
+    
+    $.fancybox.open({
+        src: "#modal",
+        type: "inline"
+    })
+})
+
+$(".app-submit-btn").click(e => {
+    e.preventDefault();
+
+    $.fancybox.close();
+})

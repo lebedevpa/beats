@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    
+    <link rel="stylesheet" href="css/main.css">
+    
     <title>Beats Solo 3</title>
 </head>
 
@@ -714,15 +716,13 @@
         </ul>
     </nav>
 
-    <div class="modal">
+    <div class="modal" id="modal">
         <div class="modal__container">
             <div class="modal__content">
-                <p class="modal__message">
-                    Сообщение отправлено
-                </p>
+                Сообщение отправлено
             </div>
-            <div class="btn-container">
-                <a href="#" class="btn btn--red">закрыть</a>
+            <div class="modal__button btn-container">
+                <a href="#" class="btn app-submit-btn btn--red">закрыть</a>
             </div>  
         </div>
     </div>
