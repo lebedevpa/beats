@@ -55,7 +55,7 @@
        
     }  
     &--contacts{
-            background: url('../img/content/map.png') center center / cover no-repeat;
+            flex-direction: column;
             align-items: flex-end;
         
     }

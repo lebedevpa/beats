@@ -124,7 +124,7 @@ img {
   right: 20%;
 }
 .section--contacts {
-  background: url("../img/content/map.png") center center/cover no-repeat;
+  flex-direction: column;
   align-items: flex-end;
 }
 
@@ -1186,6 +1186,11 @@ iframe {
   background-color: #292929;
   height: 4px;
   border-radius: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 .footer--container {

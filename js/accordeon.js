@@ -1,24 +1,35 @@
-(function(){
-    let button = document.querySelectorAll('.slider__name');
-    
-    let desc = document.querySelectorAll('slider__description')
-    let desc_wrap = document.querySelectorAll('.slider__description--wrap')
+const openItem = item => {
+    const container = item.closest(".slider__item");
+    const contentBlock = container.find(".slider__description");
+    const textBlock = contentBlock.find(".slider__description--wrap");
+    const reqHeight = textBlock.height();
 
-    function hideAccordeon(){
 
+    container.addClass("slider__item--active")
+    contentBlock.height(reqHeight);
+}   
+
+const closeEveryItem = container => {
+
+    const items = container.find(".slider__description");
+    const itemContainer = container.find(".slider__item");
+
+    itemContainer.removeClass("slider__item--active");
+    items.height(0);
+
+}
+
+$('.slider__name').click((e) => {
+    const $this = $(e.currentTarget);
+    const container = $this.closest(".slider__list");
+    const elemContainer = $this.closest(".slider__item");
+
+
+    if (elemContainer.hasClass("slider__item--active")) {
+        closeEveryItem(container);
+    } else {
+        closeEveryItem(container); 
+        openItem($this);
     }
 
-    function showAccordeon(i){
-        let height = getComputedStyle(desc[i]).height
-        desc_wrap[i].style.height = `${height}`
-        desc_wrap[i].classList.add('slider__description--wrap--active')
-    }
-
-    for (let i=0; i<button.length; i++) {
-        let current = button[i];
-
-        current.addEventListner('click', ()=>{
-            showAccordeon(i)
-        })
-    }
-})();
+})
