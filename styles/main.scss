@@ -51,6 +51,9 @@ body{
     font-weight: normal;
     line-height: rem(19px);  
     color: $gray;
+    &.fancybox-active {
+        overflow: hidden;
+    }
 }
 
 .wrapper{

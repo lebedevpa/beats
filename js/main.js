@@ -32,7 +32,7 @@ const closeEveryItem = container => {
     const items = container.find(".slider__description");
     const itemContainer = container.find(".slider__item");
 
-    itemContainer.removeClass(".slider__item--active");
+    itemContainer.removeClass("slider__item--active");
     items.height(0);
 
 }

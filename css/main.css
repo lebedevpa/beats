@@ -22,6 +22,9 @@ body {
   line-height: 1.0555555556rem;
   color: #666666;
 }
+body.fancybox-active {
+  overflow: hidden;
+}
 
 .wrapper {
   overflow: hidden;
@@ -369,7 +372,7 @@ iframe {
   text-align: center;
   margin-right: 20px;
   width: 12.2222222222rem;
-  overflow: hidden;
+  position: relative;
 }
 .slider__item:last-child {
   margin-right: 0;
@@ -382,6 +385,8 @@ iframe {
 @media screen and (max-width: 768px) {
   .slider__item {
     margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
   }
 }
 
@@ -389,13 +394,15 @@ iframe {
   margin-bottom: 1.3888888889rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__pic {
-    display: none;
+  .slider__pic--active {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
-  .slider__pic--active {
-    display: block;
+  .slider__pic {
+    width: 138px;
+    margin: 0 auto;
+    margin-bottom: 18px;
   }
 }
 
@@ -424,12 +431,21 @@ iframe {
   border-right: 5px solid transparent;
   border-bottom: 6px solid #E01F3D;
 }
+@media screen and (max-width: 768px) {
+  .slider__name {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
 
 .slider__description {
   overflow: hidden;
   height: 0;
   transition: 0.7s;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
 }
 .slider__description--active {
   height: 100px;
@@ -437,9 +453,22 @@ iframe {
 .slider__description--wrap {
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .slider__description {
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+}
 
 .slider__occupation {
   color: #292929;
+}
+@media screen and (max-width: 768px) {
+  .slider__occupation {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .slider__competence {
@@ -930,7 +959,7 @@ iframe {
   overflow: hidden;
   border: 0.2222222222rem solid transparent;
 }
-.usernames .username:hover {
+.usernames .username:hover, .usernames .username.username--active {
   border: 0.2222222222rem solid #E01F3D;
   transition: 0.7s;
 }
@@ -1239,8 +1268,9 @@ iframe {
   position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 309px;
-  height: 176px;
+  text-align: center;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   display: none;

@@ -37,7 +37,7 @@
     text-align: center;
     margin-right: 20px;
     width: rem(220px);
-    overflow: hidden;
+    position: relative;
     &:last-child{
         margin-right: 0;
         @include tablets {
@@ -46,17 +46,24 @@
     }
     @include tablets {
         margin: 0 auto;
+        width: 100%;
+        max-width: 320px; 
     }
 }
 .slider__pic{
     margin-bottom: rem(25px);
-    @include tablets {
-        display: none;
-    }
+    // @include tablets {
+    //     display: none;
+    // }
     &--active{
         @include tablets{
             display: block;
         }
+    }
+    @include tablets{
+        width: 138px;
+        margin: 0 auto;
+        margin-bottom: 18px;
     }
 }
 
@@ -84,20 +91,32 @@
         border-right: 5px solid transparent;
         border-bottom: 6px solid $red;
     }
-
+    @include tablets{
+        font-size: 21px;
+        line-height: 25px;
+    }
+   
 }
 
 .slider__description{
     overflow: hidden;
     height: 0;
     transition: 0.7s;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    top:100%;
+    left: 0;
     &--active{
         height: 100px;
     }
 
     &--wrap{
         position: absolute;
+    }
+    @include tablets{
+        position: relative;
+        top: initial;
+        left: initial;
     }
 }
 
@@ -106,8 +125,11 @@
 .slider__occupation{
     
     color: #292929;
-
-   
+    
+    @include tablets{
+        font-size: 21px;
+        line-height: 25px;
+    }
     
 }
 .slider__competence{
@@ -116,7 +138,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #666;
-   
+    color: #666;   
    
 }

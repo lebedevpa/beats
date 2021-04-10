@@ -91,7 +91,7 @@
         height: rem(80px);
         overflow: hidden;
         border: rem(4px) solid transparent;
-        &:hover{
+        &:hover, &.username--active{
             border: rem(4px) solid $red;
             transition: 0.7s;
         }

@@ -2,8 +2,9 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
     width: 309px;
-    height: 176px;
+    text-align: center;
     background: rgba(00,00,00, .5);
     display: flex;
     display: none;
