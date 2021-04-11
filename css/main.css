@@ -296,26 +296,34 @@ img {
 .gear {
   position: relative;
 }
+.gear:hover .gear__list {
+  left: 100%;
+  opacity: 1;
+}
 .gear .gear__list {
   position: absolute;
   top: 0;
-  left: 92px;
-  background: rgba(255, 255, 255, 0.8);
-  width: 273px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  display: none;
+  left: -999px;
+  opacity: 0;
+  background: #fefffe;
+  padding: 15px 27px 30px 12px;
+  transition: opacity 0.3s;
 }
 .gear .gear__item {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .gear .gear__icon {
-  width: 14px;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.gear .gear__text {
+  min-width: 130px;
+}
+.gear .gear__number {
+  margin-left: auto;
 }
 
 .video__title {

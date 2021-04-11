@@ -1,16 +1,16 @@
 let myMap;
 const init = () => {
  myMap = new ymaps.Map("map", {
-    center: [59.93916998692174, 30.309015096732622],
+    center: [34.687007, 33.036272],
     zoom: 11,
     controls: [],
   });
   
   let coords = [
-      [59.94554327989287, 30.38935262114668],
-      [59.91142323563909, 30.50024587065841],
-      [59.88693161784606, 30.319658102103713],
-      [59.97033574821672, 30.315194906302924],
+      [34.670740, 33.039237],
+      [34.681929, 33.051514],
+      [34.693166, 33.082867],
+      [34.703852, 33.048932],
     ],
     myCollection = new ymaps.GeoObjectCollection({}, {
       draggable: false,
@@ -26,7 +26,7 @@ const init = () => {
  
  myMap.geoObjects.add(myCollection);
  
- myMap.behaviors.disable('scrollZoom');
+ myMap.behaviors.enable('scrollZoom');
 };
  
 ymaps.ready(init);
