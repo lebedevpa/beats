@@ -1175,6 +1175,16 @@ button {
   height: 21.7777777778rem;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .player {
+    width: 33rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    width: 21.8888888889rem;
+  }
+}
 
 .player__wrapper {
   width: 100%;
@@ -1200,6 +1210,16 @@ button {
   align-items: center;
   padding: 0.5rem 0.9444444444rem;
 }
+@media screen and (max-width: 768px) {
+  .player__controls {
+    top: 78%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    top: 48%;
+  }
+}
 
 .player__start {
   display: block;
@@ -1215,15 +1235,6 @@ button {
   border-radius: 10%;
   outline: none;
   cursor: pointer;
-}
-.player__start .player--active {
-  width: 10px;
-  height: 10px;
-  border: 0px solid white;
-  border-left-width: 0.25rem;
-  border-right-width: 0.25rem;
-  border-radius: 0;
-  background: #151515;
 }
 
 .player__playback {
@@ -1268,7 +1279,7 @@ button {
   fill: white;
 }
 
-.player-volume {
+.player__volume {
   position: relative;
   width: 3.4444444444rem;
   height: 0.25rem;

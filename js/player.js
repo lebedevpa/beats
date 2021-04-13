@@ -3,7 +3,7 @@ const playerWrapper = document.querySelector('.player__wrapper');
 const video = document.querySelector('.video');
 const playerStart = document.querySelector('.player__start');
 const playerPlayback = document.querySelector('.player__playback');
-const progressbar = document.querySelector('.player__playback-line');
+const progressBar = document.querySelector('.player__playback-line');
 const playerVideoCircle = document.querySelector('.player__playback-button');
 const playerVolumeIcon = document.querySelector('.player__volume-icon');
 const playerVolumeBar = document.querySelector('.player__volume');
@@ -78,3 +78,27 @@ const toggleSound = () => {
 
 playerVolumeBar.addEventListener('click', changeVolume);
 playerVolumeIcon.addEventListener('click', toggleSound);
+
+// Duration
+
+const handleDuration = (e) => {
+  const barSize = parseInt(getComputedStyle(playerPlayback).width);
+  const cirleWidth = parseInt(getComputedStyle(playerVideoCircle).width);
+
+  // const {offSetX} = e;
+
+  const offSetX = e.offSetX;
+  const newSize = offSetX + cirleWidth / 2;
+  const newTime = (newSize + video.duration) / barSize;
+  video.currentTime = newTime;
+}
+
+const updateTime = () => {
+  let redBar = video.currentTime / video.duration;
+  progressBar.style.width = `${redBar * 100}%`;
+
+}
+
+
+playerPlayback.addEventListener('click', handleDuration);
+video.addEventListener('click', updateTime);
