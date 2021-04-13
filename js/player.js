@@ -12,6 +12,7 @@ const playerVolumeCircle = document.querySelector('.player__volume-button');
 let startVolume = 0;
 let currentVolume;
 
+
 // запуск функционала
 
 const handleStart = () => {
@@ -49,6 +50,11 @@ const togglePlayer = (action = "start" ) => {
 
 // звук
 
+const changeCircglePosition = (percent) => {
+  playerVideoCircle.style.left = `${percent}`;
+}
+
+
 const changeVolume = (e) => {
 
   const currentTarget = e.currentTarget;
@@ -58,7 +64,8 @@ const changeVolume = (e) => {
   const percentValue = (newPosition / soundBarWidth) * 100;
   if (percentValue < 100) {
     video.volume = percentValue / 100;
-    playerVolumeCircle.style.left = `${percentValue}%`;
+    // playerVolumeCircle.style.left = `${percentValue}%`;
+    changeCircglePosition(percentValue);
   }
 
 }
@@ -67,11 +74,13 @@ const toggleSound = () => {
   playerVolumeIcon.classList.toggle("muted");
   if (volume === 0) {
     video.volume = currentVolume;
-    playerVolumeCircle.style.left = `${currentVolume * 100}%`;
+    // playerVolumeCircle.style.left = `${currentVolume * 100}%`;
+    changeCircglePosition(currentVolume * 100);
   } else {
   currentVolume = video.volume;
   video.volume = startVolume;
-  playerVolumeCircle.style.left = `${startVolume}%`;
+  // playerVolumeCircle.style.left = `${startVolume}%`;
+  changeCircglePosition(startVolume);
   }
 }
 
@@ -82,6 +91,7 @@ playerVolumeIcon.addEventListener('click', toggleSound);
 // Duration
 
 const handleDuration = (e) => {
+
   const barSize = parseInt(getComputedStyle(playerPlayback).width);
   const cirleWidth = parseInt(getComputedStyle(playerVideoCircle).width);
 
