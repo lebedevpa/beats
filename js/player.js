@@ -1,5 +1,5 @@
 const playerContainer = document.querySelector('.player');
-const playerWrapper = document.querySelector('.player__wrapper');
+
 const video = document.querySelector('.video');
 const playerStart = document.querySelector('.player__start');
 const playerPlayback = document.querySelector('.player__playback');
@@ -19,17 +19,19 @@ const handleStart = () => {
 
   if(video.paused){
     video.play();
+    playerStart.classList.add('player__start--active');
   } else {
     video.pause();
+    playerStart.classList.remove('player__start--active');
   }
 
 }
 
 playerStart.addEventListener('click', handleStart);
-playerWrapper.addEventListener('click', handleStart);
+video.addEventListener('click', handleStart);
 
 
-// значок play не отлавливается
+// значок play 
 
 video.onplay = () => {
   togglePlayer();
@@ -50,7 +52,7 @@ const togglePlayer = (action = "start" ) => {
 
 // звук
 
-const changeCircglePosition = (percent) => {
+const changeCirclePosition = (percent) => {
   playerVideoCircle.style.left = `${percent}`;
 }
 
@@ -58,29 +60,34 @@ const changeCircglePosition = (percent) => {
 const changeVolume = (e) => {
 
   const currentTarget = e.currentTarget;
-  const left = currentTarget.getBoundingClientRect().left;
+  const left = e.offSetX;
+
   const soundBarWidth = parseInt(getComputedStyle(currentTarget).width);
-  const newPosition = e.pageX - left;
-  const percentValue = (newPosition / soundBarWidth) * 100;
+
+  // const newPosition = e.pageX - left;
+  
+  const percentValue = (left / soundBarWidth) * 100;
   if (percentValue < 100) {
     video.volume = percentValue / 100;
-    // playerVolumeCircle.style.left = `${percentValue}%`;
-    changeCircglePosition(percentValue);
+    playerVolumeCircle.style.left = `${percentValue}%`;
+    changeCirclePosition(percentValue);
+    document.querySelector('.player__volume-bar').style.width = `${percentValue}%`;
+   
   }
 
 }
 
 const toggleSound = () => {
   playerVolumeIcon.classList.toggle("muted");
-  if (volume === 0) {
+  if (video.volume === 0) {
     video.volume = currentVolume;
-    // playerVolumeCircle.style.left = `${currentVolume * 100}%`;
-    changeCircglePosition(currentVolume * 100);
+    playerVolumeCircle.style.left = `${currentVolume * 100}%`;
+    changeCirclePosition('currentVolume' * 100);
   } else {
-  currentVolume = video.volume;
-  video.volume = startVolume;
-  // playerVolumeCircle.style.left = `${startVolume}%`;
-  changeCircglePosition(startVolume);
+    currentVolume = video.volume;
+    video.volume = startVolume;
+    playerVolumeCircle.style.left = `${startVolume}%`;
+    changeCirclePosition('startVolume');
   }
 }
 
@@ -93,7 +100,7 @@ playerVolumeIcon.addEventListener('click', toggleSound);
 const handleDuration = (e) => {
 
   const barSize = parseInt(getComputedStyle(playerPlayback).width);
-  const cirleWidth = parseInt(getComputedStyle(playerVideoCircle).width);
+  const cirсleWidth = parseInt(getComputedStyle(playerVideoCircle).width);
 
   // const {offSetX} = e;
 

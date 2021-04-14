@@ -15,7 +15,7 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 52px;
-    text-transform: uppercase;
+    text-align: start;
     color: #FFFFFF;
 
 }
@@ -42,14 +42,15 @@
 }
 .product__title{
     position: absolute;
-    left: -50%;
-    top: 55%;
+    left: 50%;
+    bottom: 17%;
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
     color: white;
+    transform-origin: 0 0;
     white-space: nowrap;
     transform: rotate(-90deg) translate(-50%, -50%);
     
