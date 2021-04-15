@@ -26,10 +26,21 @@
     bottom: 0;
     display: flex;
 }
+
+.product__content{
+    position: relative;
+    width: 0;
+    opacity: 0;
+    padding: 31px 38px;
+    background: rgba(51, 53, 55, 0.9);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: width .7s;
+}
 .product{
     display: flex;
     position: relative;
-    width: 102px;
+    min-width: 102px;
     &--silver{
         background-color: #999999;
     }
@@ -39,26 +50,27 @@
     &--red{
         background-color: $red;
     }
+    &--active > .product__content{
+        display: block;
+        width: 524px;
+        padding: 31px 38px;
+        opacity: 1;
+        color: white;
+    }
 }
 .product__title{
     position: absolute;
     left: 50%;
-    bottom: 17%;
+    bottom: 10px;
+    
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
     color: white;
-    transform-origin: 0 0;
     white-space: nowrap;
-    transform: rotate(-90deg) translate(-50%, -50%);
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
     
-}
-.product__content{
-    position: relative;
-    width: 0;
-    overflow: hidden;
-    background: rgba(51, 53, 55, 0.9);
-    transition: width .7s;
 }

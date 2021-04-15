@@ -357,10 +357,6 @@ iframe {
   }
 }
 
-.team__container {
-  justify-content: space-evenly;
-}
-
 .team__title {
   text-align: center;
 }
@@ -540,10 +536,22 @@ iframe {
   display: flex;
 }
 
+.product__content {
+  position: relative;
+  width: 0;
+  opacity: 0;
+  padding: 31px 38px;
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
 .product {
   display: flex;
   position: relative;
-  width: 102px;
+  min-width: 102px;
 }
 .product--silver {
   background-color: #999999;
@@ -554,28 +562,27 @@ iframe {
 .product--red {
   background-color: #E01F3D;
 }
+.product--active > .product__content {
+  display: block;
+  width: 524px;
+  padding: 31px 38px;
+  opacity: 1;
+  color: white;
+}
 
 .product__title {
   position: absolute;
   left: 50%;
-  bottom: 17%;
+  bottom: 10px;
   font-family: Alegreya Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
   color: white;
-  transform-origin: 0 0;
   white-space: nowrap;
-  transform: rotate(-90deg) translate(-50%, -50%);
-}
-
-.product__content {
-  position: relative;
-  width: 0;
-  overflow: hidden;
-  background: rgba(51, 53, 55, 0.9);
-  transition: width 0.7s;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
 }
 
 .logo {
