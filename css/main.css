@@ -1379,7 +1379,6 @@ button {
 }
 
 .player__volume-bar {
-  position: relative;
   width: 0;
   height: 100%;
   background: #E01F3D;
@@ -1392,7 +1391,7 @@ button {
   border-radius: 50%;
   background: #E01F3D;
   top: 50%;
-  left: 100%;
+  right: 0;
   transform: translateY(-50%);
   padding: 0;
 }

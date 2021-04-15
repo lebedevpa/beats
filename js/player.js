@@ -1,5 +1,4 @@
 const playerContainer = document.querySelector('.player');
-
 const video = document.querySelector('.video');
 const playerStart = document.querySelector('.player__start');
 const playerPlayback = document.querySelector('.player__playback');
@@ -53,19 +52,23 @@ const togglePlayer = (action = "start" ) => {
 // звук
 
 const changeCirclePosition = (percent) => {
-  playerVideoCircle.style.left = `${percent}`;
+  // playerVideoCircle.style.left = `${percent}`;
 }
 
 
 const changeVolume = (e) => {
 
   const currentTarget = e.currentTarget;
-  const left = e.offSetX;
+  const left = e.offsetX;
 
   const soundBarWidth = parseInt(getComputedStyle(currentTarget).width);
+  console.log(left);
+  console.log(soundBarWidth);
+  console.log('soundBarwidth - left', soundBarWidth - left);
+
 
   // const newPosition = e.pageX - left;
-  
+
   const percentValue = (left / soundBarWidth) * 100;
   if (percentValue < 100) {
     video.volume = percentValue / 100;
@@ -104,16 +107,29 @@ const handleDuration = (e) => {
 
   // const {offSetX} = e;
 
-  const offSetX = e.offSetX;
-  const newSize = offSetX + cirleWidth / 2;
-  const newTime = (newSize + video.duration) / barSize;
-  video.currentTime = newTime;
+  const offsetX = e.offsetX;
+  const percentValue = (offsetX / barSize) * 100;
+  const videoDuration = video.duration;
+  const durationOne = video.duration / 100;
+  video.currentTime = percentValue * durationOne;
+  progressBar.style.width = `${percentValue}%`;
 }
 
+let interval;
 const updateTime = () => {
-  let redBar = video.currentTime / video.duration;
-  progressBar.style.width = `${redBar * 100}%`;
 
+  if (video.paused) {
+    clearInterval(interval);
+  } else {
+    interval = setInterval(() => {
+      const completedTime = video.currentTime;
+      const videoDuration = video.duration;
+      const currentTime = (completedTime / videoDuration) *100;
+      progressBar.style.width = `${currentTime}%`;
+    },1000);
+  
+  }
+    progressBar.style.width = `${currentTime}%`;
 }
 
 
