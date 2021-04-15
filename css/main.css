@@ -551,7 +551,6 @@ iframe {
 .product {
   display: flex;
   position: relative;
-  min-width: 102px;
 }
 .product--silver {
   background-color: #999999;
