@@ -1,15 +1,19 @@
 .section--products{
-    background: url('../img/content/menu-bg.png')top left / cover no-repeat;
+    background: url('../img/content/menu-bg.png')top right -30% / cover no-repeat;
     position: relative;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets{
+        background: url('../img/content/menu-bg.png')center right / cover no-repeat;
+    }
 }
 .products__title{
     position: absolute;
-    width: 170px;
-    height: 52px;
-    left: 84px;
-    top: 115px;
+    width: rem(170px);
+    height: rem(52px);
+    left: rem(84px);
+    top: rem(115px);
     font-family: Play;
     font-style: normal;
     font-weight: bold;
@@ -17,6 +21,10 @@
     line-height: 52px;
     text-align: start;
     color: #FFFFFF;
+
+    @include phones{
+        left: rem(40px);
+    }
 
 }
 .products-menu__list{
@@ -30,8 +38,6 @@
 .product__content{
     position: relative;
     width: 0;
-    opacity: 0;
-    padding: 31px 38px;
     background: rgba(51, 53, 55, 0.9);
     backdrop-filter: blur(10px);
     overflow: hidden;
@@ -42,23 +48,50 @@
     position: relative;
     // min-width: 102px;
     &--silver{
+        .product__title{
         background-color: #999999;
+        }
     }
     &--black{
+        .product__title{
         background-color: #151515;
+        }
     }
     &--red{
+        .product__title{
         background-color: $red;
+        }
     }
-    &--active > .product__content{
-        display: block;
-        width: 524px;
-        padding: 31px 38px;
-        opacity: 1;
-        color: white;
-    }
+    &--active {
+
+        @include phones {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .product__content{
+            display: block;
+            width: 524px;
+            color: white;
+
+            .product__text{
+                opacity: 1;
+                transition: opacity 0.3s;
+                transition-delay: 0.5s;
+            }
+        }
+    } 
 }
 .product__title{
+    width: rem(102px);
+    height: 100%;
+    position: relative;
+}
+
+.product__title--text{
     position: absolute;
     left: 50%;
     bottom: 10px;
@@ -72,5 +105,12 @@
     white-space: nowrap;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
-    
+}
+.product__text{
+    padding: 31px 38px;
+    opacity: 0;
+    @include phones{
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

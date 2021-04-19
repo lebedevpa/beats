@@ -507,18 +507,23 @@ iframe {
 }
 
 .section--products {
-  background: url("../img/content/menu-bg.png") top left/cover no-repeat;
+  background: url("../img/content/menu-bg.png") top right -30%/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .section--products {
+    background: url("../img/content/menu-bg.png") center right/cover no-repeat;
+  }
+}
 
 .products__title {
   position: absolute;
-  width: 170px;
-  height: 52px;
-  left: 84px;
-  top: 115px;
+  width: 9.4444444444rem;
+  height: 2.8888888889rem;
+  left: 4.6666666667rem;
+  top: 6.3888888889rem;
   font-family: Play;
   font-style: normal;
   font-weight: bold;
@@ -526,6 +531,11 @@ iframe {
   line-height: 52px;
   text-align: start;
   color: #FFFFFF;
+}
+@media screen and (max-width: 480px) {
+  .products__title {
+    left: 2.2222222222rem;
+  }
 }
 
 .products-menu__list {
@@ -539,8 +549,6 @@ iframe {
 .product__content {
   position: relative;
   width: 0;
-  opacity: 0;
-  padding: 31px 38px;
   background: rgba(51, 53, 55, 0.9);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -552,24 +560,42 @@ iframe {
   display: flex;
   position: relative;
 }
-.product--silver {
+.product--silver .product__title {
   background-color: #999999;
 }
-.product--black {
+.product--black .product__title {
   background-color: #151515;
 }
-.product--red {
+.product--red .product__title {
   background-color: #E01F3D;
 }
-.product--active > .product__content {
+@media screen and (max-width: 480px) {
+  .product--active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+  }
+}
+.product--active .product__content {
   display: block;
   width: 524px;
-  padding: 31px 38px;
-  opacity: 1;
   color: white;
+}
+.product--active .product__content .product__text {
+  opacity: 1;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
 }
 
 .product__title {
+  width: 5.6666666667rem;
+  height: 100%;
+  position: relative;
+}
+
+.product__title--text {
   position: absolute;
   left: 50%;
   bottom: 10px;
@@ -582,6 +608,17 @@ iframe {
   white-space: nowrap;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
+}
+
+.product__text {
+  padding: 31px 38px;
+  opacity: 0;
+}
+@media screen and (max-width: 480px) {
+  .product__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .logo {
