@@ -35,6 +35,7 @@ $phones: 480px;
 @import 'media';
 
 html{
+    height: 100%;
     font-size: $baseFontSize;
     @include tablets {
         font-size: $baseFontSize - 1px;
@@ -51,6 +52,7 @@ body{
     font-weight: normal;
     line-height: rem(19px);  
     color: $gray;
+    height: 100%;
     &.fancybox-active {
         overflow: hidden;
     }

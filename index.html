@@ -23,7 +23,7 @@
                             <a href="#" class="nav-menu__link">О Нас</a>
                         </li>
                         <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Наушники</a>
+                            <a  href="#" class="nav-menu__link">Наушники</a>
                         </li>
                         <li class="nav-menu__item">
                             <a href="#" class="nav-menu__link">Команда</a>
@@ -43,7 +43,7 @@
                     </ul>
                 </nav>
             </div>
-            <section class="section section--greeting section--gray greeting">
+            <section data-section-id="greeting" class="section section--greeting section--gray greeting">
     
                 <div class="container greeting__container">
     
@@ -59,25 +59,25 @@
                             <nav class="nav-menu">
                                 <ul class="nav-menu__list">
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">О Нас</a>
+                                        <a data-scroll-to="greeting" href="#" class="nav-menu__link">О Нас</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Наушники</a>
+                                        <a data-scroll-to="features" href="#" class="nav-menu__link">Наушники</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Команда</a>
+                                        <a data-scroll-to="team" href="#" class="nav-menu__link">Команда</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Цвета</a>
+                                        <a data-scroll-to="products" href="#" class="nav-menu__link">Цвета</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Отзывы</a>
+                                        <a data-scroll-to="reviews" href="#" class="nav-menu__link">Отзывы</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Как мы работаем</a>
+                                        <a data-scroll-to="video" href="#" class="nav-menu__link">Как мы работаем</a>
                                     </li>
                                     <li class="nav-menu__item">
-                                        <a href="#" class="nav-menu__link">Контакты</a>
+                                        <a data-scroll-to="contacts" href="#" class="nav-menu__link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -145,7 +145,7 @@
     
                 </div>
             </section>
-            <section class="section section--features section--white">
+            <section data-section-id="features" class="section section--features section--white">
                 <div class="container">
                     <div class="top-block">
                         <h2 class="top-block__title headline">
@@ -204,7 +204,7 @@
     
                 </div>
             </section>
-            <section class="section section--shop section--light-gray">
+            <section data-section-id="shop" class="section section--shop section--light-gray">
                 <div class="container">
                     <div class="shop__controls">
                                     <a href="#" class="shop__btn shop__btn_left"></a>
@@ -403,7 +403,7 @@
                 </div>
             </section>
     
-            <section class="section section--team section--white">
+            <section data-section-id="team" class="section section--team section--white">
     
                 <div class="team__container container">
                     <div class="team__title">
@@ -621,7 +621,7 @@
                 </div>
     
             </section>
-            <section class=" section section--products">
+            <section data-section-id="products" class="section section--products">
                 
                     <h2 class="products__title">ЦВЕТА</h2>
                     <div class="products-menu">
@@ -675,7 +675,7 @@
                         </ul>
                     </div>
             </section>
-            <section class="section section--reviews section--whites">
+            <section data-section-id="reviews" class="section section--reviews section--whites">
                 <div class="container">
                     <div class="reviews__title headline">
                         <h2 class="headline">отзывы</h2>
@@ -751,7 +751,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section--video section--light-gray">
+            <section data-section-id="video" class="section section--video section--light-gray">
     
                 <div class="container">
                     <h2 class="headline video__title">Как мы работаем</h2>
@@ -786,7 +786,7 @@
                     </div>
     
             </section>
-            <section class="section section--delivery section--black">
+            <section data-section-id="delivery" class="section section--delivery section--black">
                 <div class="container container--delivery">
                     <h2 class="headline headline--white">Закажите доставку</h2>
                     <form class="form">
@@ -862,7 +862,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section section--contacts">
+            <section data-section-id="contacts" class="section section--contacts">
                 <div class="map" id="map"></div>
                 <div class="footer--container">
                     <footer class="footer">
@@ -913,7 +913,7 @@
                 </div>
             </section>
         </div>
-    
+        
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
                 <li class="fixed-menu__item fixed-menu__item--active">
@@ -956,7 +956,8 @@
                 </div>
             </div>
         </div>
-        </div>
+
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
