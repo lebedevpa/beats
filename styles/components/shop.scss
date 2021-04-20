@@ -1,3 +1,33 @@
+.shop__item{
+    position: relative;
+   
+}
+.bx-wrapper{
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.shop__controls{
+    display: block;
+    position: relative;
+    top: 30%;
+}
+
+.shop__btn{
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    &_right{
+        right: rem(-100px);
+        
+    }
+    &_left{
+        left:rem(-100px);
+    }
+}
+
+
 .shop{
     display: flex;
     flex-direction: row;
@@ -5,24 +35,6 @@
     @include tablets{
         flex-direction: column;
     }
-
-    &__controls{
-        display: block;
-    }
-
-    &__btn{
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, 0);
-        z-index: 10;
-        &_right{
-            right: rem(-100px);
-        }
-        &_left{
-            left:rem(-100px);
-        }
-    }
-
 
     &__picture{
         margin-right: 60px;

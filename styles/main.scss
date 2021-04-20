@@ -54,11 +54,21 @@ body{
     &.fancybox-active {
         overflow: hidden;
     }
+    .wrapper{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        .main-content{
+            height: 100%;
+            transition: transform 1s;
+            will-change: transform;
+        }
+    }
+
 }
 
-.wrapper{
-    overflow: hidden;
-}
+
 
 .container{
     width: 95%;
