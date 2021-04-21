@@ -24,6 +24,7 @@
   "homepage": "https://github.com/lebedevpa/beats#readme",
   "dependencies": {
     "jquery": "^3.6.0",
+    "jquery-touchswipe": "^1.6.19",
     "webpack": "^5.28.0"
   },
   "devDependencies": {

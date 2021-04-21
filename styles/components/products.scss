@@ -111,8 +111,8 @@
 .product__text{
     padding: 31px 38px;
     opacity: 0;
-    @include phones{
-        font-size: 16px;
-        line-height: 24px;
-    }
+    // @include phones{
+    //     font-size: 16px;
+    //     line-height: 24px;
+    // }
 }

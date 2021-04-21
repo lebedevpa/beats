@@ -654,12 +654,6 @@ iframe {
   padding: 31px 38px;
   opacity: 0;
 }
-@media screen and (max-width: 480px) {
-  .product__text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
 
 .logo {
   width: 2.2222222222rem;
