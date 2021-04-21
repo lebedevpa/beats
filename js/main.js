@@ -126,8 +126,8 @@ $("body").swipe({
         const scroller = viewportScroller();
         let scrollDirection = "";
 
-        if (direciton === "up")scrollDirection = "next";
-        if (direciton === "down")scrollDirection = "prev";
+        if (direction === "up")scrollDirection = "next";
+        if (direction === "down")scrollDirection = "prev";
         
         scroller[scrollDirection]();
     },
