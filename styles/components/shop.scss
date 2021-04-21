@@ -1,3 +1,9 @@
+.section--shop{
+    @include phones{
+        padding-top: 30%;
+    }
+}
+
 .shop__item{
     position: relative;
    
@@ -12,6 +18,9 @@
     display: block;
     position: relative;
     top: 30%;
+    @include phones {
+        top: 15%;
+    }
 }
 
 .shop__btn{
@@ -20,10 +29,15 @@
     z-index: 10;
     &_right{
         right: rem(-100px);
-        
+        @include phones {
+            right: 5%;
+        }
     }
     &_left{
         left:rem(-100px);
+        @include phones {
+            left: 5%;
+        }
     }
 }
 
@@ -100,6 +114,10 @@
         @include tablets{
             max-width: 100%;
             text-align: center;
+        }
+        @include phones {
+            font-size: 28px;
+            line-height: 32px;
         }
     }
 

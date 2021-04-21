@@ -16,34 +16,7 @@
 <body>
     <div class="wrapper">
         <div class="main-content">
-            <div class="burger-menu" id="burger-menu">
-                <nav class="nav-menu">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">О Нас</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a  href="#" class="nav-menu__link">Наушники</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Команда</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Цвета</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Отзывы</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Как мы работаем</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a href="#" class="nav-menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <section data-section-id="greeting" class="section section--greeting section--gray greeting">
+            <section data-sidemenu-theme="dark" data-section-id="greeting" class="section section--greeting section--gray greeting">
     
                 <div class="container greeting__container">
     
@@ -55,6 +28,33 @@
                                         <use xlink:href="img/sprite.svg#logo-svg"></use>
                                     </svg>
                                 </a>
+                            </div>
+                            <div class="burger-menu" id="burger-menu">
+                                <nav class="nav-menu">
+                                    <ul class="nav-menu__list">
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="greeting" href="#" class="nav-menu__link">О Нас</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="features" href="#" class="nav-menu__link">Наушники</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="team" href="#" class="nav-menu__link">Команда</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="products" href="#" class="nav-menu__link">Цвета</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="reviews" href="#" class="nav-menu__link">Отзывы</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="video" href="#" class="nav-menu__link">Как мы работаем</a>
+                                        </li>
+                                        <li class="nav-menu__item">
+                                            <a data-scroll-to="contacts" href="#" class="nav-menu__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                             <nav class="nav-menu">
                                 <ul class="nav-menu__list">
@@ -105,7 +105,7 @@
                             <p class="hero__text">Встречайте новую версию наушников
                                 из линейки Powerbeats.</p>
                             <div class="btn-container">
-                                <a href="#" class="btn btn--red">заказать</a>
+                                <a data-scroll-to="shop" href="#" class="btn btn--red">заказать</a>
                             </div>
                         </div>
                         <div class="hero__column hero__picture">
@@ -145,7 +145,7 @@
     
                 </div>
             </section>
-            <section data-section-id="features" class="section section--features section--white">
+            <section data-sidemenu-theme="dark" data-section-id="features" class="section section--features section--white">
                 <div class="container">
                     <div class="top-block">
                         <h2 class="top-block__title headline">
@@ -204,7 +204,7 @@
     
                 </div>
             </section>
-            <section data-section-id="shop" class="section section--shop section--light-gray">
+            <section data-sidemenu-theme="dark" data-section-id="shop" class="section section--shop section--light-gray">
                 <div class="container">
                     <div class="shop__controls">
                                     <a href="#" class="shop__btn shop__btn_left"></a>
@@ -402,8 +402,7 @@
     
                 </div>
             </section>
-    
-            <section data-section-id="team" class="section section--team section--white">
+            <section data-sidemenu-theme="dark" data-section-id="team" class="section section--team section--white">
     
                 <div class="team__container container">
                     <div class="team__title">
@@ -621,7 +620,7 @@
                 </div>
     
             </section>
-            <section data-section-id="products" class="section section--products">
+            <section data-sidemenu-theme="white" data-section-id="products" class="section section--products">
                 
                     <h2 class="products__title">ЦВЕТА</h2>
                     <div class="products-menu">
@@ -675,7 +674,7 @@
                         </ul>
                     </div>
             </section>
-            <section data-section-id="reviews" class="section section--reviews section--whites">
+            <section data-sidemenu-theme="dark" data-section-id="reviews" class="section section--reviews section--whites">
                 <div class="container">
                     <div class="reviews__title headline">
                         <h2 class="headline">отзывы</h2>
@@ -751,7 +750,7 @@
                     </div>
                 </div>
             </section>
-            <section data-section-id="video" class="section section--video section--light-gray">
+            <section data-sidemenu-theme="dark" data-section-id="video" class="section section--video section--light-gray">
     
                 <div class="container">
                     <h2 class="headline video__title">Как мы работаем</h2>
@@ -786,7 +785,7 @@
                     </div>
     
             </section>
-            <section data-section-id="delivery" class="section section--delivery section--black">
+            <section data-sidemenu-theme="white" data-section-id="delivery" class="section section--delivery section--black">
                 <div class="container container--delivery">
                     <h2 class="headline headline--white">Закажите доставку</h2>
                     <form class="form">
@@ -862,7 +861,7 @@
                     </form>
                 </div>
             </section>
-            <section data-section-id="contacts" class="section section--contacts">
+            <section data-sidemenu-theme="dark" data-section-id="contacts" class="section section--contacts">
                 <div class="map" id="map"></div>
                 <div class="footer--container">
                     <footer class="footer">
@@ -913,35 +912,34 @@
                 </div>
             </section>
         </div>
-        
         <nav class="fixed-menu">
             <ul class="fixed-menu__list">
                 <li class="fixed-menu__item fixed-menu__item--active">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="greeting" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="features" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="shop" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="team" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="products" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="reviews" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="video" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="delivery" href="" class="fixed-menu__link"></a>
                 </li>
                 <li class="fixed-menu__item">
-                    <a href="" class="fixed-menu__link"></a>
+                    <a data-scroll-to="contacts" href="" class="fixed-menu__link"></a>
                 </li>
             </ul>
         </nav>
@@ -964,6 +962,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/map.js"></script>
     <script src="js/accordeon.js"></script>
     <script src="js/menuAccordeon.js"></script>

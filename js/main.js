@@ -28,14 +28,31 @@ const performTransition = sectionEq => {
     if (inScroll === false) {
         inScroll = true;
         const position = sectionEq * -100;
+
+        const currentSection = sections.eq(sectionEq);
+        const menuTheme = currentSection.attr("data-sidemenu-theme");
+        const sideMenu = $(".fixed-menu");
+
+
+        if (menuTheme === "white") {
+            sideMenu.addClass("fixed-menu__link--theme--light");
+        } else {
+            sideMenu.removeClass("fixed-menu__link--theme--light");
+        }
+
         display.css({
             transform: `translateY(${position}%)`
         })
     
         sections.eq(sectionEq).addClass("section--active").siblings().removeClass("section--active");
         
+        
+
         setTimeout(() => {
             inScroll = false;
+
+            sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
+
         }, 1300);
     }
 
@@ -77,7 +94,7 @@ $(window).on("wheel", e => {
     const tagName = e.target.tagName.toLowerCase();
 
     if (tagName != "input" && tagName != "textarea") {
-        switch (e.keycode){
+        switch (e.keyCode){
             case 38:
                 scrollViewport("prev");
                 break;

@@ -23,7 +23,9 @@
     color: #FFFFFF;
 
     @include phones{
-        left: rem(40px);
+        left: rem(20px);
+        font-size: 32px;
+        line-height: 36px;
     }
 
 }

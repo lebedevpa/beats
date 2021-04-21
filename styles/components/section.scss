@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    min-height: rem(650px);
+
     &--greeting{
         padding-bottom: rem(25px);
         position: relative;
@@ -39,8 +39,6 @@
 
     &--black{
         background: url('../img/form-bg.png') center / cover no-repeat $black;
-        padding-top: rem(38px);
-        padding-bottom: rem(85px);
         position: relative;
         &::after{
             content: "";

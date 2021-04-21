@@ -48,14 +48,6 @@ body .wrapper .main-content {
   flex-direction: column;
   justify-content: center;
 }
-.container--delivery {
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 768px) {
-  .container--delivery {
-    margin-top: 5.5555555556rem;
-  }
-}
 
 ul {
   list-style: none;
@@ -85,7 +77,6 @@ img {
   height: 100%;
   width: 100%;
   display: flex;
-  min-height: 36.1111111111rem;
 }
 .section--greeting {
   padding-bottom: 1.3888888889rem;
@@ -118,8 +109,6 @@ img {
 }
 .section--black {
   background: url("../img/form-bg.png") center/cover no-repeat #292929;
-  padding-top: 2.1111111111rem;
-  padding-bottom: 4.7222222222rem;
   position: relative;
 }
 .section--black::after {
@@ -162,6 +151,12 @@ img {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 480px) {
+  .section--shop {
+    padding-top: 30%;
+  }
+}
+
 .shop__item {
   position: relative;
 }
@@ -177,6 +172,11 @@ img {
   position: relative;
   top: 30%;
 }
+@media screen and (max-width: 480px) {
+  .shop__controls {
+    top: 15%;
+  }
+}
 
 .shop__btn {
   position: absolute;
@@ -186,8 +186,18 @@ img {
 .shop__btn_right {
   right: -5.5555555556rem;
 }
+@media screen and (max-width: 480px) {
+  .shop__btn_right {
+    right: 5%;
+  }
+}
 .shop__btn_left {
   left: -5.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .shop__btn_left {
+    left: 5%;
+  }
 }
 
 .shop {
@@ -266,6 +276,12 @@ img {
   .shop__title {
     max-width: 100%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .shop__title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 .shop__description {
@@ -556,7 +572,9 @@ iframe {
 }
 @media screen and (max-width: 480px) {
   .products__title {
-    left: 2.2222222222rem;
+    left: 1.1111111111rem;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -689,10 +707,12 @@ iframe {
 
 .burger-menu {
   display: none;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #313131;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 .burger-menu .nav-menu {
@@ -853,6 +873,9 @@ iframe {
   height: 0.5rem;
   background-color: #292929;
   opacity: 60%;
+}
+.fixed-menu__link::before .fixed-menu__link--theme--light {
+  background-color: #fff;
 }
 
 .features-small {
