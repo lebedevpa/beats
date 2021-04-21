@@ -18,6 +18,8 @@ button.addEventListener('click', toggleMenu);
 
 const sections = $("section");
 const display = $(".main-content")
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -108,6 +110,8 @@ $(window).on("wheel", e => {
 
 });
 
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
 
@@ -119,17 +123,21 @@ $("[data-scroll-to]").click(e => {
 
 });
 
+if (isMobile) {
+    $("body").swipe({
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
+    
+            if (direction === "up")scrollDirection = "next";
+            if (direction === "down")scrollDirection = "prev";
+            
+            scroller[scrollDirection]();
+        },
+    });
+}
+
 // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("body").swipe({
-    swipe: function (event, direction) {
-        const scroller = viewportScroller();
-        let scrollDirection = "";
 
-        if (direction === "up")scrollDirection = "next";
-        if (direction === "down")scrollDirection = "prev";
-        
-        scroller[scrollDirection]();
-    },
-});
     
