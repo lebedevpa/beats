@@ -13,6 +13,7 @@ let toggleMenu = function() {
 }
 
 button.addEventListener('click', toggleMenu);   
+$('.nav-menu__link').on('click', toggleMenu);
 
 // OPS
 
@@ -125,14 +126,16 @@ $("[data-scroll-to]").click(e => {
 
 if (isMobile) {
     $("body").swipe({
+        preventDefaultEvents: false, 
         swipe: function (event, direction) {
-            const scroller = viewportScroller();
-            let scrollDirection = "";
-    
-            if (direction === "up")scrollDirection = "next";
-            if (direction === "down")scrollDirection = "prev";
             
-            scroller[scrollDirection]();
+            if (direction === "up") {
+                scrollViewport("next");
+        }
+            if (direction === "down") {
+                scrollViewport("prev");
+        }
+            
         },
     });
 }

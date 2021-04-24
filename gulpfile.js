@@ -23,19 +23,19 @@ task( 'clean', () => {
 });
 
 task('copy:html', () => {
-  return src('./*.html')
+  return src('src/index.html')
   .pipe(dest('dist'))
   .pipe(reload({ stream: true}));
 });
 task('copy:img', () => {
-  return src('./img/**/*', )
-  .pipe(dest('dist/img'))
-  .pipe(reload({ stream: true}));
+  return src('src/img/**/*', )
+  .pipe(dest('dist/img'));
+  // .pipe(reload({ stream: true}));
 });
 
 const styles = [
   'node_modules/normalize.css/normalize.css',
-  'styles/main.scss'
+  'src/styles/main.scss'
 ]
 
 task('styles', () => {
@@ -54,12 +54,13 @@ task('styles', () => {
   )
   .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(sourcemaps.write())
-  .pipe(dest('dist'));
+  .pipe(dest('dist'))
+  .pipe(reload({ stream:true }));
 });
 
 
 task('scripts', () => {
-  return src('js/*.js')
+  return src('src/js/*.js')
   .pipe(sourcemaps.init())
   .pipe(concat('main.js', {newLine: ";"}))
   .pipe(babel({
@@ -67,11 +68,12 @@ task('scripts', () => {
   }))
   .pipe(uglify())
   .pipe(sourcemaps.write())
-  .pipe(dest('dist'));
+  .pipe(dest('dist'))
+  .pipe(reload({ stream: true}));
 });
 
 task('icons', () => {
-  return src('img/svg/*.svg')
+  return src('src/img/svg/*.svg')
     .pipe(svgo({
       plugins: [
         {
@@ -90,19 +92,20 @@ task('icons', () => {
       }
     }))
     .pipe(dest('dist/img/svg/'))
+    .pipe(reload({ stream: true}));
 })
 
 task('server', () => {
   browserSync.init({
       server: {
-          baseDir: "./dist"
+          baseDir: "dist/"
       }
   });
 });
 
-watch('./styles/**/*.scss', series('styles'));
-watch('./*.html', series('copy:html'));
-watch('./js/**/*.js', series('scripts'));
+watch('src/styles/**/*.scss', series('styles'));
+watch('src/*.html', series('copy:html'));
+watch('src/img/svg/*.svg', series('icons'));
+watch('src/js/**/*.js', series('scripts'));
 task('default', series('clean', 'copy:html', 'copy:img','styles', 'icons', 'scripts', 'server'));
-
 

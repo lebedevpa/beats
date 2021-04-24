@@ -18,6 +18,10 @@
     display: block;
     position: relative;
     top: 30%;
+    @include tablets {
+        top: 15%;
+        right: 5%;
+    }
     @include phones {
         top: 15%;
     }
@@ -25,18 +29,27 @@
 
 .shop__btn{
     position: absolute;
-    transform: translate(-50%, 0);
+    
     z-index: 10;
     &_right{
         right: rem(-100px);
+        transform: rotate(320deg);
+        @include tablets {
+            right: 0%;
+        }
+       
         @include phones {
-            right: 5%;
+            right: 0%;
         }
     }
     &_left{
         left:rem(-100px);
+        transform: rotate(135deg);
+        @include tablets {
+            left: 10%;
+        }       
         @include phones {
-            left: 5%;
+            left: 10%;
         }
     }
 }
@@ -180,7 +193,7 @@
     .gear__list {
         position: absolute;
         top: 0;
-        left: -999px;
+        left: -9999px;
         opacity: 0;
         background: #fefffe;
         padding: 15px 27px 30px 12px;
